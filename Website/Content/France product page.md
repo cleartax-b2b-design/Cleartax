@@ -1,0 +1,179 @@
+&nbsp;
+
+---
+
+**NAV**&nbsp;
+
+ClearTax · Mandate · Architecture · Platform · E-Reporting · Book a demo
+
+---
+
+**HERO**
+
+Badge: France e-Invoicing Mandate — September 2026
+
+Headline: Comply with France's e-Invoicing mandate — before it's urgent.
+
+Subtext: ClearTax is listed on DGFiP's official PA registry and live in the French ecosystem. One platform, zero rebuilds — ready for September 2026 and every mandate that follows.
+
+CTA: See how it works
+
+Stats: 1B+ — e-Invoices generated annually 5,000+ — Global enterprise clients 50+ — Countries covered globally $500B+ — Worth of invoices processed
+
+---
+
+**MANDATE TIMELINE**
+
+Eyebrow: Regulatory Timeline
+
+Heading: France's reform is on track. Are you?
+
+Subtext: The DGFiP mandate rolls out in phases. Large enterprises hit mandatory compliance in September 2026\. Implementation takes 8–10 weeks — the window is closing.
+
+S1 2025 — Completed Central directory API testing DGFiP opened the Annuaire PPF API for certified PAs to begin integration and flow testing with the central directory.
+
+Oct 2025 — Completed PPF qualification environment PPF testing environment opened for flows 1, 6, and 10 — finalising the PA registration process for certified partners including ClearTax.
+
+Feb 2026 — Live now Voluntary pilot phase launched Businesses can begin voluntarily issuing e-invoices via certified PAs. Early movers resolve integration issues before the mandatory deadline.
+
+Sep 2026 — Mandatory Large & mid-size companies (50M€+ turnover) Mandatory reception for all companies. Mandatory issuance and e-reporting for large and mid-size enterprises. Missing this date means penalties from day one.
+
+Sep 2027 — Planned SMEs and micro-enterprises Full mandate extended to all remaining businesses. France's digital tax transformation complete.
+
+---
+
+**Y-MODEL ARCHITECTURE**
+
+Eyebrow: Architecture
+
+Heading: The Y-Model, demystified
+
+Subtext: France uses a decentralised CTC exchange model. Invoices flow via certified PAs — direct supplier-to-buyer exchange is not permitted by DGFiP.
+
+DGFiP-approved PA — already certified ClearTax is listed on the official Partenaire Dématérialisateur registry. Not going through certification — already certified, live, and operational in the French PPF environment today.
+
+All EN16931 formats supported UBL 2.1, CII, and Factur-X. Automatic format transformation from your ERP's native output — no manual field mapping required.
+
+Full 14-status lifecycle tracking Every mandatory status from Déposée through Encaissée automatically reported to DGFiP in real time — without manual intervention.
+
+Sovereign French cloud — 10-year archive Hosted on AWS EU with multi-AZ local data residency. ISO 27001:2022, SOC-2, and GDPR compliant throughout the mandatory 10-year retention period.
+
+Diagram caption: Decentralised CTC Y-Model · 14-status lifecycle · 10-year archive
+
+---
+
+**PLATFORM FEATURES**
+
+Eyebrow: Platform
+
+Heading: Built for the full complexity of French compliance
+
+Subtext: ClearTax is not an invoice transmitter. It is a compliance operating system — from ERP integration through VAT reconciliation.
+
+AI-driven integration  
+Autonomous mapping of your ERP data model. Pre-built connectors for SAP R3/HANA/ECC, Oracle, MS Dynamics 365, and 50 others. Go from kick-off to live invoices in 8–10 weeks.
+
+One integration, 40+ countries&nbsp;  
+Integrate once. When Belgium (2026), Germany (2027), or Spain (2027) mandates arrive, unlock them instantly — no new ERP work. Your IT team touches it once, ever.
+
+Real-time MIS dashboard&nbsp;  
+Every invoice status, error rate, and lifecycle event in a single view. One-click drill-down into failures with guided corrective workflows. Nothing misses your finance team.
+
+AI-powered reconciliation&nbsp;  
+Automatically matches e-invoice data against your ERP general ledger. Surfaces discrepancies before DGFiP's own audits — eliminating the VAT-gap notices that hit 90% of businesses post-mandate.
+
+24×7 dedicated support&nbsp;  
+A named French-speaking customer success manager. In-house tax compliance experts on call. In-product ticketing with a 3-tiered escalation matrix — no outsourced helpdesk, ever.
+
+Future-proof by design&nbsp;  
+Regulatory amendments — new fields, format updates, DGFiP changes — are absorbed by our cloud layer. No ERP changes, no re-integration cycles, no IT surprises when the rules shift.
+
+---
+
+**PENALTIES**
+
+Eyebrow: Compliance Risk
+
+Heading: The cost of missing the September deadline
+
+Subtext: France's penalty regime escalates fast. Italy halved its VAT gap within two years of mandating e-invoicing — because enforcement followed immediately.
+
+€50 — Per non-compliant invoice&nbsp;  
+Applied to every invoice not transmitted through a certified PA. Capped at €15,000 per year — but volume compounds quickly at enterprise scale.
+
+€500 — Per e-reporting transmission&nbsp;  
+Penalty for each failed or incorrect submission of B2C and cross-border transaction data to DGFiP. Also capped at €15,000 per year.
+
+Audit exposure — Operational and reputational risk Non-compliance triggers DGFiP audit risk, payment delays from buyers unable to receive e-invoices, and reputational damage with French trading partners.
+
+---
+
+**E-REPORTING**
+
+Eyebrow: E-Reporting
+
+Heading: What to report, and when
+
+Subtext: E-Reporting covers cross-border B2B and B2C transactions not in scope for domestic e-invoicing. Frequencies and deadlines vary by VAT regime and transaction type.
+
+![][image1]
+
+Note: All e-reporting must follow DGFiP-approved XML/JSON structured schemas. ClearTax automates all transformations, scheduling, and submissions — your team sees a status dashboard, not raw XML.
+
+---
+
+**WHY ClearTax**
+
+Eyebrow: Why ClearTax
+
+Heading: Built for the long game, not just the deadline
+
+Subtext: One in three companies switches their e-invoicing vendor within a year. ClearTax is designed to be the last compliance platform you need.
+
+01 — Already on DGFiP's approved PA registry&nbsp;  
+Listed as a Partenaire Dématérialisateur — not going through certification, but already certified, live, and tested in the French PPF environment since the pilot launch in February 2026\.
+
+02 — No ERP changes required after go-live&nbsp;  
+Regulatory amendments and new data fields are absorbed entirely by our cloud layer. Your IT team is involved once — at initial setup — and never again.
+
+03 — 14 years of global mandate experience&nbsp;  
+We've powered e-invoicing in India, Saudi Arabia, UAE, Malaysia, Belgium, Croatia, Poland and across Europe. We understand how enforcement escalates post-launch — and built ClearTax to absorb it.
+
+04 — In-house tax expertise, not outsourced&nbsp;  
+1,000+ engineers and compliance specialists including dedicated French tax experts who monitor DGFiP updates daily and ship platform changes before they affect your filings.
+
+05 — Proven performance at enterprise scale Processing 100M+ invoices per month globally. 99.88% platform uptime. Clients include Bosch, Michelin, L'Oréal, Decathlon, Nestlé, and Volkswagen — companies that cannot afford compliance downtime.
+
+06 — 100+ European clients already live Havas Media, Kappa, Cognizant, Hilton Brussels, adidas, and 90+ other European businesses already run on ClearTax. Onboarding in France follows a proven, repeatable playbook.
+
+---
+
+**CLIENTS**
+
+Eyebrow: Trusted by 5000+ brands globally&nbsp;
+
+**Add from the 5000+ section**
+
+---
+
+**CTA BAND**
+
+Heading: September 2026 is closer than you think.
+
+Subtext: Implementation takes 8–10 weeks. Companies that start now avoid the rush — and the risk.
+
+CTA: Book a Demo
+
+Note: No commitment required · Response within one business day
+
+---
+
+**~~FOOTER~~**
+
+~~© 2026 ClearTax · Listed on DGFiP's approved Partenaire Dématérialisateur registry · Registered Peppol Access Point~~
+
+~~Badges: ISO 27001:2022 · SOC-2 · GDPR · SecNumCloud~~
+
+&nbsp;
+
+[image1]: <data:image/png;base64,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>

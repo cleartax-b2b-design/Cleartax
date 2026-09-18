@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wireframe — Non-India Homepage (ideation)</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="wf-banner">Wireframe · ideation only · greyscale, placeholder blocks, real copy</div>
+
+<!-- 00 NAV -->
+<header class="nav">
+  <div class="nav-in">
+    <div class="ph ph-logo">logo</div>
+    <nav class="nav-links"><span>Product</span><span>Solutions</span><span>Resources</span><span>Company</span></nav>
+    <div class="nav-cta">
+      <div class="btn btn-ghost">Sign in</div>
+      <div class="btn btn-solid">Book a demo</div>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- 01 HERO -->
+  <section class="sec" style="border-top:none">
+    <div class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow">01 · Hero</span>
+        <h1>Close the gap between AI's promise and finance reality</h1>
+        <p class="lead">ClearTax gives you clean finance data and the business context AI needs — so your finance team can build and use AI with confidence.</p>
+        <div class="hero-cta">
+          <div class="btn btn-solid">Book a demo</div>
+          <div class="btn btn-ghost">See how it works</div>
+        </div>
+      </div>
+      <div class="ph ph-hero"><span>Hero visual<br><i>product surface vs. abstract data layer — TBD</i></span></div>
+    </div>
+
+    <!-- the hero paragraph, restructured: three named problems instead of prose -->
+    <div class="problems">
+      <div class="problem">
+        <span class="problem-n">01</span>
+        <b>Messy data</b>
+        <span>Spread across systems that never agree with each other.</span>
+      </div>
+      <div class="problem">
+        <span class="problem-n">02</span>
+        <b>Output you can't trust</b>
+        <span>Confident answers, no evidence, no way to check them.</span>
+      </div>
+      <div class="problem">
+        <span class="problem-n">03</span>
+        <b>Dependence on IT</b>
+        <span>Every new question starts with a fresh extract request.</span>
+      </div>
+    </div>
+    <div class="claim-bar">ClearTax fixes all three — with one foundation, not three projects.</div>
+
+    <p class="note">Note: the hero paragraph became three named problems, so the reader gets the argument in one scan. Single primary CTA retained.</p>
+  </section>
+
+  <!-- 02 COMPARISON -->
+  <section class="sec">
+    <div class="sec-head">
+      <span class="eyebrow">02 · The problem</span>
+      <h2>Why generic AI fails for finance</h2>
+      <p class="lead">Same seven jobs. The only difference is whether the model knows your finance logic.</p>
+    </div>
+
+    <div class="uc-legend">
+      <span>The use case</span>
+      <span><i class="mark">✕</i> With generic AI</span>
+      <span class="lg-yes"><i class="mark mark--yes">✓</i> With ClearTax AI</span>
+    </div>
+
+    <div class="uc">
+      <div class="uc-name"><span class="n">01</span><b>Revenue reconciliation</b></div>
+      <div class="uc-no">
+        <p class="vd">Matches on invoice number — the only rule it has.</p>
+        <p class="dt">It does not know your finance logic.</p>
+        <span class="mini" style="margin-top:12px">Blind spots</span>
+        <div class="chips"><span class="chip">POS truncates SKU codes</span><span class="chip">Credit notes post a period late</span><span class="chip">Three entities file under a different registration</span></div>
+      </div>
+      <div class="uc-yes">
+        <p class="vd">All three rules sit in the layer.</p>
+        <p class="dt">Reconciles daily across billing, POS, OMS and GL — at line-item level.</p>
+      </div>
+    </div>
+
+    <div class="uc">
+      <div class="uc-name"><span class="n">02</span><b>Monthly close</b></div>
+      <div class="uc-no">
+        <p class="vd">Reads what you hand it and calls that complete.</p>
+        <p class="dt">It has no map of your systems, so it never asks:</p>
+        <div class="chips"><span class="chip">Where is the WMS extract?</span><span class="chip">Where is the third-party billing feed?</span></div>
+        <p class="ft">Missing data is what delays close.</p>
+      </div>
+      <div class="uc-yes">
+        <p class="vd">Knows every source that should have reported.</p>
+        <p class="dt">Flags what has not arrived, and from which system — on day two.</p>
+      </div>
+    </div>
+
+    <div class="uc">
+      <div class="uc-name"><span class="n">03</span><b>VAT exposure</b></div>
+      <div class="uc-no">
+        <p class="vd">It can quote the rate. It cannot check who used it.</p>
+        <p class="dt">Exposure is the value of every transaction that applied the wrong rate. Finding it needs both:</p>
+        <div class="chips"><span class="chip">All 40,000 line items</span><span class="chip">Rate history by date</span></div>
+        <p class="ft">It has neither.</p>
+      </div>
+      <div class="uc-yes">
+        <p class="vd">Tests every line item against the rate in force that day.</p>
+        <p class="dt">Surfaces what broke and what it is worth — before you file.</p>
+      </div>
+    </div>
+
+    <div class="uc">
+      <div class="uc-name"><span class="n">04</span><b>Contract and pricing leakage</b></div>
+      <div class="uc-no">
+        <p class="vd">One contract fits in a prompt. 800 do not.</p>
+        <p class="dt">And two million transactions never will. No link exists between a clause and the transactions it governs.</p>
+      </div>
+      <div class="uc-yes">
+        <p class="vd">Every term maps to the transactions it governs.</p>
+        <p class="dt">Checked continuously, so leakage surfaces in the month it happens.</p>
+      </div>
+    </div>
+
+    <div class="uc">
+      <div class="uc-name"><span class="n">05</span><b>Order tracking</b></div>
+      <div class="uc-no">
+        <p class="vd">Sees a PO and a receipt as two unrelated records.</p>
+        <p class="dt">It does not know your supply chain logic:</p>
+        <div class="chips"><span class="chip">Lead-time norms by lane</span><span class="chip">Who owns stock in transit</span><span class="chip">One vendor exists three times in your master</span></div>
+      </div>
+      <div class="uc-yes">
+        <p class="vd">Joins PO, shipment, receipt and invoice into one chain.</p>
+        <p class="dt">Where orders stall, what the delay costs, what sits in transit — daily.</p>
+      </div>
+    </div>
+
+    <div class="uc">
+      <div class="uc-name"><span class="n">06</span><b>Tax notice response</b></div>
+      <div class="uc-no">
+        <p class="vd">No evidence to cite, so it writes around it.</p>
+        <p class="dt">No invoice numbers, no dates, no counterparties — just a generic provision. The officer asks for the same proof again.</p>
+      </div>
+      <div class="uc-yes">
+        <p class="vd">Drafts from the actual transactions.</p>
+        <p class="dt">Invoice, line item, date, counterparty, jurisdiction, and the rule that applied on that date.</p>
+      </div>
+    </div>
+
+    <div class="uc">
+      <div class="uc-name"><span class="n">07</span><b>The next use case</b></div>
+      <div class="uc-no">
+        <p class="vd">Nothing persists.</p>
+        <p class="dt">The last answer lived in one analyst's export, on one Tuesday. So the next question starts with a fresh extract.</p>
+      </div>
+      <div class="uc-yes">
+        <p class="vd">Reads the same trusted numbers as the last one.</p>
+        <p class="dt">Weeks, not quarters.</p>
+      </div>
+    </div>
+
+    <p class="note">Note: each row now leads with a one-line verdict and demotes the explanation; sub-lists became chips. 7 rows is still long — options are (a) accordion, first row open; (b) 4 hero rows + "see all".</p>
+  </section>
+
+  <!-- 03 THE LAYER -->
+  <section class="sec">
+    <div class="sec-head">
+      <span class="eyebrow">03 · How it works</span>
+      <h2>Give the same model a foundation, and it stops guessing.</h2>
+      <p class="lead">Three stages. The middle one is the part nobody else builds.</p>
+    </div>
+
+    <div class="stages">
+      <div class="stage">
+        <div class="stage-top"><span class="badge">1</span><span class="tagline">Input</span></div>
+        <h3>Business systems</h3>
+        <p class="sub">The baseline: every system you run, always current.</p>
+        <div class="chips" style="margin-top:16px">
+          <span class="chip chip--solid">ERP</span><span class="chip chip--solid">POS</span>
+          <span class="chip chip--solid">OMS</span><span class="chip chip--solid">WMS</span>
+          <span class="chip chip--solid">Customer data lakes</span><span class="chip chip--solid">Government systems</span>
+          <span class="chip chip--solid">Banking &amp; payments</span><span class="chip chip--solid">Documents &amp; mail</span>
+        </div>
+        <p class="foot">Clean data is only the starting point. AI needs your context on top of it.</p>
+      </div>
+
+      <div class="stage-arrow">→</div>
+
+      <div class="stage stage--core">
+        <div class="stage-top"><span class="badge">2</span><span class="tagline">The core layer</span></div>
+        <h3>Financial context</h3>
+        <p class="sub">The layer behind AI output you can trust.</p>
+        <div class="items">
+          <div class="item"><b>Linked records</b><span>Every system joined at transaction level</span></div>
+          <div class="item"><b>Statutory logic</b><span>Rates, classification and filing rules, across 50+ countries</span></div>
+          <div class="item"><b>Your logic</b><span>GL structure, credit notes, vendor and item definitions, the recons and checks you run</span></div>
+          <div class="item"><b>Institutional memory</b><span>Every investigation and the decision it led to</span></div>
+        </div>
+        <p class="foot">Every rule your finance team carries in its head.</p>
+      </div>
+
+      <div class="stage-arrow">→</div>
+
+      <div class="stage">
+        <div class="stage-top"><span class="badge">3</span><span class="tagline">Output</span></div>
+        <h3>Studios &amp; surfaces</h3>
+        <p class="sub">Where your agents run, with context ready instead of rebuilt on every query.</p>
+        <div class="items">
+          <div class="item"><b>CFO Studio</b><span>Apps and workflows you can ask questions of</span></div>
+          <div class="item"><b>Agent Studio</b><span>Always-on agents that flag exceptions, send reports and alerts</span></div>
+          <div class="item"><b>Surfaces you already own</b><span>Any agent, via MCP or API</span></div>
+        </div>
+        <p class="foot">The ClearTax computation engine ensures accuracy at volume, without hallucinations.</p>
+      </div>
+    </div>
+
+    <div class="strip">Data already flows in. Finance logic already built.</div>
+    <p class="note">Note: stage 1 is a list of system names, so it reads better as chips than as bullets. Stage 2 stays weighted — it is the argument. Arrows may become a connected diagram.</p>
+  </section>
+
+  <!-- 04 PROOF -->
+  <section class="sec">
+    <div class="sec-head">
+      <span class="eyebrow">04 · Proof</span>
+      <h2>Proven to work in the real world</h2>
+      <p class="lead">Live with enterprise customers today. Every result runs on the same layer, with no new plumbing.</p>
+    </div>
+
+    <div class="filters">
+      <span class="filter is-on">All</span><span class="filter">Supply chain</span><span class="filter">Tax</span>
+      <span class="filter">Pricing</span><span class="filter">Fraud</span><span class="filter">Vendor</span><span class="filter">Plant</span>
+    </div>
+
+    <div class="grid3">
+      <div class="pcard">
+        <div class="pcard-metrics"><div><b>6 days</b><span>cut from order to delivery</span></div><div><b>18%</b><span>less stock in transit</span></div></div>
+        <div class="pcard-body">
+          <p class="pcard-claim">Where orders stall and what the delay costs, daily.</p>
+          <div class="pcard-meta"><span>Sourcing &amp; supply chain</span><span>Multi-site distributor, GCC</span></div>
+        </div>
+      </div>
+      <div class="pcard">
+        <div class="pcard-metrics"><div><b>7×</b><span>faster end to end</span></div><div><b>3 days</b><span>vs 20–30 days before</span></div></div>
+        <div class="pcard-body">
+          <p class="pcard-claim">Every notice type, answered with the transactions behind it.</p>
+          <div class="pcard-meta"><span>Audit &amp; tax litigation</span><span>Multi-entity enterprise, India</span></div>
+        </div>
+      </div>
+      <div class="pcard">
+        <div class="pcard-metrics"><div><b>4%</b><span>of SKUs selling off-contract</span></div><div><b>800</b><span>contracts checked continuously</span></div></div>
+        <div class="pcard-body">
+          <p class="pcard-claim">Every contract checked against every transaction.</p>
+          <div class="pcard-meta"><span>Pricing &amp; revenue integrity</span><span>Manufacturer, KSA</span></div>
+        </div>
+      </div>
+      <div class="pcard">
+        <div class="pcard-metrics"><div><b>0.4%</b><span>of payment value recovered</span></div><div><b>100%</b><span>of invoices screened, daily</span></div></div>
+        <div class="pcard-body">
+          <p class="pcard-claim">Duplicate payments and ghost vendors caught before payout.</p>
+          <div class="pcard-meta"><span>Fraud detection</span><span>Retail group, UAE</span></div>
+        </div>
+      </div>
+      <div class="pcard">
+        <div class="pcard-metrics"><div><b>12,000+</b><span>vendors scored on live data</span></div><div><b>3%</b><span>of spend redirected</span></div></div>
+        <div class="pcard-body">
+          <p class="pcard-claim">Every vendor ranked on cost, quality and delivery.</p>
+          <div class="pcard-meta"><span>Vendor &amp; procurement</span><span>Diversified conglomerate, India</span></div>
+        </div>
+      </div>
+      <div class="pcard">
+        <div class="pcard-metrics"><div><b>9%</b><span>less unplanned downtime</span></div><div><b>100%</b><span>of control breaks with a named owner</span></div></div>
+        <div class="pcard-body">
+          <p class="pcard-claim">Output, downtime and yield in one view.</p>
+          <div class="pcard-meta"><span>Plant &amp; controls</span><span>Industrial group, Malaysia</span></div>
+        </div>
+      </div>
+    </div>
+    <p class="note">Note: metrics moved to the top of each card — the number is the hook, the claim is the caption. Filter chips wireframe the intended interaction.</p>
+  </section>
+
+  <!-- 05 E-INVOICING -->
+  <section class="sec">
+    <div class="sec-head">
+      <span class="eyebrow">05 · The wedge</span>
+      <h2>E-invoicing is where the foundation starts</h2>
+      <p class="lead">The mandates are already creating structured data for you. The only decision left is whether you build on it.</p>
+    </div>
+
+    <div class="paths">
+      <div class="path">
+        <div class="path-head"><i class="mark">✕</i> Compliance-only</div>
+        <div class="path-body">
+          <p class="path-line">Invoice data leaves in a government format and never comes back.</p>
+          <p class="path-line">You don't use the data to build more intelligence.</p>
+          <p class="path-line">You pay multiple times for the same extraction.</p>
+        </div>
+      </div>
+      <div class="vs">VS</div>
+      <div class="path path--win">
+        <div class="path-head"><i class="mark mark--yes">✓</i> Foundation-first</div>
+        <div class="path-body">
+          <p class="path-line">The invoice data is validated, tagged and joined across systems.</p>
+          <p class="path-line">The next finance use cases start from a data foundation instead of another extraction.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="band">
+      <div><b>50+</b><span>countries live or mandated</span></div>
+      <div><b>One API</b><span>the same integration everywhere</span></div>
+      <div><b>Configuration</b><span>new mandates sit on top, not a separate build</span></div>
+    </div>
+    <p class="note">Note: the two-path decision is the whole section — the contrast has to land at a glance, so the winning path is weighted and the losing one is not.</p>
+  </section>
+
+  <!-- 06 TRUST -->
+  <section class="sec">
+    <div class="sec-head">
+      <span class="eyebrow">06 · Trust</span>
+      <h2>Seamless integrations, compliance and dependable support</h2>
+    </div>
+
+    <div class="tabs">
+      <span class="tab is-on">Compliance</span><span class="tab">Integrations</span><span class="tab">Security</span><span class="tab">Service &amp; support</span>
+    </div>
+
+    <div class="panel">
+      <div class="panel-head"><h3>Compliance</h3><span>Powering global e-invoicing alongside regulators.</span></div>
+      <div class="grid4">
+        <div class="cell"><b>Peppol</b><span>Pan-European e-invoicing network</span></div>
+        <div class="cell"><b>FTA</b><span>UAE Federal Tax Authority</span></div>
+        <div class="cell"><b>ZATCA</b><span>Saudi mandate (Fatoorah)</span></div>
+        <div class="cell"><b>DGFiP</b><span>French tax administration</span></div>
+        <div class="cell"><b>FPS Finance</b><span>Belgian fiscal services</span></div>
+        <div class="cell"><b>NIC</b><span>National Informatics Centre</span></div>
+        <div class="cell"><b>LHDN</b><span>Malaysian tax authority</span></div>
+        <div class="cell"><b>New mandates</b><span>Arrive as configuration, not a rebuild</span></div>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-head"><h3>Integrations</h3><span>Deep integrations mean minimal to no changes in your daily workflow.</span></div>
+      <div class="band">
+        <div><b>2,000+</b><span>successful integrations</span></div>
+        <div><b>Any system</b><span>ERPs, POS, handheld systems</span></div>
+        <div><b>100+</b><span>integration engineers</span></div>
+      </div>
+      <div class="logorow">
+        <div class="ph ph-logo-sm">SAP</div><div class="ph ph-logo-sm">Oracle</div><div class="ph ph-logo-sm">Dynamics</div>
+        <div class="ph ph-logo-sm">Microsoft</div><div class="ph ph-logo-sm">Shopify</div><div class="ph ph-logo-sm">Toshiba</div><div class="ph ph-logo-sm">POS</div>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-head"><h3>Security</h3><span>Bank-grade security at every layer of the foundation.</span></div>
+      <div class="grid4">
+        <div class="cell"><b>SOC 2 Type II</b><span>Annual audit compliance</span></div>
+        <div class="cell"><b>ISO 27001 / 22301</b><span>Security and business continuity</span></div>
+        <div class="cell"><b>GDPR</b><span>Regulatory-compliant data handling</span></div>
+        <div class="cell"><b>SSL transit</b><span>Encrypted in transit with TLS 1.3</span></div>
+        <div class="cell"><b>AES 256-bit</b><span>Encryption at rest</span></div>
+        <div class="cell"><b>VAPT</b><span>Vulnerability assessment and penetration testing</span></div>
+        <div class="cell"><b>Auth tokens</b><span>Secure token-based authentication</span></div>
+        <div class="cell"><b>Privacy</b><span>Role-based access control</span></div>
+        <div class="cell cell--wide"><b>Data residency</b><span>Each region runs on dedicated, sovereign infrastructure. Your data never leaves your environment and is never used to train models.</span></div>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-head"><h3>Service and support</h3><span>End-to-end assistance from onboarding to ongoing optimisation.</span></div>
+      <div class="grid3">
+        <div class="cell"><b>Onboarding managers</b><span>A dedicated team ensures smooth setup</span></div>
+        <div class="cell"><b>Training</b><span>Comprehensive programmes for your team</span></div>
+        <div class="cell"><b>Dedicated KAMs</b><span>Key account managers for personalised service</span></div>
+        <div class="cell"><b>Feature requests</b><span>We build what you need, when you need it</span></div>
+        <div class="cell"><b>Onsite visits</b><span>In-person support and consultation at your office</span></div>
+        <div class="cell"><b>Always reachable</b><span>Named contacts, not a ticket queue</span></div>
+      </div>
+    </div>
+
+    <p class="note">Note: 26 items shown flat so nothing is hidden from review, but the tab bar wireframes the intended build — one frame, four panels. Compliance and Security move to a denser 4-up grid.</p>
+  </section>
+
+  <!-- 07 CTA -->
+  <section class="sec">
+    <div class="cta">
+      <span class="eyebrow">07 · Closing CTA</span>
+      <h2>Ready to get started with your AI foundation?</h2>
+      <p class="lead">Start with e-invoicing, or start with the layer. Either way, you only build it once.</p>
+      <div class="btn btn-solid">Book a demo</div>
+    </div>
+  </section>
+
+</main>
+
+<!-- 08 FOOTER -->
+<footer class="foot-bar">
+  <div class="foot-in">
+    <span>© 2026 ClearTax. All rights reserved.</span>
+    <div class="ph ph-logo">logo</div>
+  </div>
+</footer>
+
+</body>
+</html>

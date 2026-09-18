@@ -1,0 +1,210 @@
+/* ===== WIREFRAME STYLESHEET =====================================
+   Deliberately unbranded: greyscale only, no brand colour, one
+   neutral typeface, dashed placeholders. The point is structure,
+   hierarchy and scanning order for ideation — not visual design.
+
+   Layout principle used throughout: promote the short verdict,
+   demote the explanation, and turn every inline list into chips.
+================================================================= */
+:root{
+  --ink:#16181d; --ink-2:#5b6068; --ink-3:#8c9199;
+  --line:#dcdee2; --line-2:#c3c7cd; --hair:#ecedf0;
+  --fill:#f4f5f6; --fill-2:#eaebee; --paper:#fff;
+  --max:1200px; --r:3px;
+}
+*{box-sizing:border-box;}
+body{margin:0;background:#fbfbfc;color:var(--ink);
+  font:15px/1.55 ui-sans-serif,-apple-system,"Helvetica Neue",Arial,sans-serif;
+  -webkit-font-smoothing:antialiased;}
+h1,h2,h3,h4{margin:0;font-weight:600;letter-spacing:-.02em;}
+p{margin:0;}
+b{font-weight:600;}
+
+.wf-banner{position:sticky;top:0;z-index:60;background:var(--ink);color:#fff;
+  font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;padding:9px 20px;text-align:center;}
+
+/* ---- section shell ------------------------------------------- */
+.sec{max-width:var(--max);margin:0 auto;padding:84px 24px;border-top:1px solid var(--hair);}
+.sec-head{max-width:840px;}
+.eyebrow{display:inline-flex;align-items:center;gap:9px;font-size:10.5px;letter-spacing:.11em;
+  text-transform:uppercase;color:var(--ink-3);margin-bottom:16px;}
+.eyebrow::before{content:"";width:24px;height:1px;background:var(--line-2);}
+h1{font-size:40px;line-height:1.12;max-width:19ch;}
+h2{font-size:30px;line-height:1.2;}
+h3{font-size:16px;}
+.lead{color:var(--ink-2);font-size:15.5px;line-height:1.55;margin-top:12px;max-width:74ch;}
+.note{margin-top:26px;padding:10px 14px;border-left:3px solid var(--line-2);
+  background:var(--fill);font-size:12.5px;color:var(--ink-2);}
+.mini{display:block;font-size:10px;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--ink-3);margin-bottom:8px;}
+
+/* ---- placeholders — dashed box with an X, reads as "not final" -- */
+.ph{display:flex;align-items:center;justify-content:center;text-align:center;
+  border:1px dashed var(--line-2);border-radius:var(--r);background:
+    linear-gradient(to top right,transparent 49.6%,var(--line) 49.6%,var(--line) 50.4%,transparent 50.4%),
+    linear-gradient(to bottom right,transparent 49.6%,var(--line) 49.6%,var(--line) 50.4%,transparent 50.4%),
+    var(--fill);
+  color:var(--ink-3);font-size:12px;}
+.ph i{font-style:normal;font-size:11px;}
+.ph-logo{width:88px;height:28px;}
+.ph-logo-sm{height:38px;flex:1 1 90px;font-size:11px;}
+.ph-hero{flex:1 1 420px;min-height:320px;}
+
+/* ---- buttons / nav -------------------------------------------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;border-radius:var(--r);
+  padding:11px 20px;font-size:13px;font-weight:600;border:1px solid var(--ink);white-space:nowrap;}
+.btn-solid{background:var(--ink);color:#fff;}
+.btn-ghost{border-color:var(--line-2);color:var(--ink-2);}
+.nav{position:sticky;top:31px;z-index:50;background:#fbfbfcf2;backdrop-filter:blur(6px);
+  border-bottom:1px solid var(--hair);}
+.nav-in{max-width:var(--max);margin:0 auto;padding:16px 24px;
+  display:flex;align-items:center;gap:24px;}
+.nav-links{display:flex;gap:22px;font-size:13.5px;color:var(--ink-2);margin-left:12px;}
+.nav-cta{margin-left:auto;display:flex;gap:10px;align-items:center;}
+
+/* ---- 01 hero --------------------------------------------------- */
+.hero{display:flex;gap:56px;align-items:flex-start;flex-wrap:wrap;}
+.hero-copy{flex:1 1 460px;display:flex;flex-direction:column;align-items:flex-start;gap:20px;}
+.hero-cta{display:flex;gap:10px;flex-wrap:wrap;}
+/* the old hero paragraph, restructured into three scannable problems */
+.problems{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:44px;
+  border:1px solid var(--line);background:var(--paper);}
+.problem{padding:22px;border-left:1px solid var(--hair);}
+.problem:first-child{border-left:none;}
+.problem-n{font-size:11px;color:var(--ink-3);letter-spacing:.08em;}
+.problem b{display:block;font-size:15px;margin:8px 0 5px;}
+.problem span{font-size:12.5px;color:var(--ink-2);line-height:1.45;}
+.claim-bar{margin-top:0;border:1px solid var(--line);border-top:none;background:var(--fill);
+  padding:16px 22px;font-size:14.5px;font-weight:600;}
+
+/* ---- 02 use-case comparison ------------------------------------ */
+.uc-legend,.uc{display:grid;grid-template-columns:190px 1fr 1fr;}
+.uc-legend{margin-top:28px;}
+.uc-legend>*{padding:11px 18px;font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;
+  color:var(--ink-3);display:flex;align-items:center;gap:8px;}
+.uc-legend .lg-yes{background:var(--fill-2);color:var(--ink);font-weight:600;}
+.uc{border:1px solid var(--line);background:var(--paper);margin-top:-1px;}
+.uc>*{padding:20px 18px;}
+.uc-name{border-right:1px solid var(--line);background:#fcfcfd;}
+.uc-name .n{font-size:11px;color:var(--ink-3);display:block;margin-bottom:6px;}
+.uc-name b{font-size:14px;line-height:1.3;}
+.uc-no{border-right:1px solid var(--line);}
+.uc-yes{background:#f8f9fa;}
+/* the promoted line — this is what a scanner reads */
+.vd{font-size:14px;font-weight:600;line-height:1.4;}
+.uc-no .vd{color:var(--ink-2);}
+.dt{font-size:12.5px;color:var(--ink-2);line-height:1.5;margin-top:7px;}
+.uc-yes .dt{color:var(--ink-2);}
+.ft{font-size:11.5px;color:var(--ink-3);margin-top:9px;}
+/* mark: circled cross / tick, so the two columns are pre-attentively different */
+.mark{width:17px;height:17px;border-radius:50%;border:1px solid var(--line-2);flex:none;
+  display:inline-flex;align-items:center;justify-content:center;font-size:9px;line-height:1;color:var(--ink-3);}
+.mark--yes{background:var(--ink);border-color:var(--ink);color:#fff;}
+/* inline lists become chips instead of nested bullets */
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px;}
+.chip{font-size:11px;line-height:1.35;padding:5px 10px;border-radius:20px;
+  border:1px dashed var(--line-2);background:var(--fill);color:var(--ink-2);}
+.chip--solid{border-style:solid;background:var(--paper);}
+
+/* ---- 03 three-stage layer -------------------------------------- */
+.stages{display:flex;align-items:stretch;gap:0;margin-top:32px;flex-wrap:wrap;}
+.stage{flex:1 1 260px;border:1px solid var(--line);background:var(--paper);padding:24px 22px;
+  display:flex;flex-direction:column;}
+.stage--core{border:2px solid var(--ink);background:var(--fill);z-index:2;}
+.stage-arrow{display:flex;align-items:center;justify-content:center;width:44px;
+  color:var(--ink-3);font-size:17px;flex:none;}
+.badge{width:30px;height:30px;border-radius:50%;border:1px solid var(--line-2);
+  display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:600;color:var(--ink-2);}
+.stage--core .badge{background:var(--ink);border-color:var(--ink);color:#fff;}
+.stage-top{display:flex;align-items:center;gap:12px;}
+.stage-top .tagline{font-size:10px;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-3);}
+.stage--core .stage-top .tagline{color:var(--ink);font-weight:600;}
+.stage h3{margin:16px 0 6px;}
+.stage .sub{font-size:12.5px;color:var(--ink-2);line-height:1.45;}
+.items{margin-top:14px;}
+/* term + gloss on separate lines beats a run-on bullet */
+.item{padding:10px 0;border-top:1px solid var(--hair);}
+.item b{display:block;font-size:12.5px;}
+.item span{display:block;font-size:11.5px;color:var(--ink-2);line-height:1.45;margin-top:2px;}
+.stage .foot{margin-top:auto;padding-top:14px;font-size:11.5px;color:var(--ink-3);line-height:1.45;}
+.strip{margin-top:20px;border:1px solid var(--line-2);background:var(--fill-2);
+  padding:18px 20px;font-size:12.5px;letter-spacing:.09em;text-transform:uppercase;
+  font-weight:600;color:var(--ink-2);text-align:center;}
+
+/* ---- 04 proof — metric first ----------------------------------- */
+.filters{display:flex;gap:6px;flex-wrap:wrap;margin-top:26px;}
+.filter{font-size:12px;padding:7px 14px;border-radius:20px;border:1px solid var(--line-2);
+  background:var(--paper);color:var(--ink-2);}
+.filter.is-on{background:var(--ink);border-color:var(--ink);color:#fff;font-weight:600;}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:18px;}
+.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:24px;}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:16px;}
+.pcard{border:1px solid var(--line);background:var(--paper);display:flex;flex-direction:column;}
+.pcard-metrics{display:flex;border-bottom:1px solid var(--line);}
+.pcard-metrics div{flex:1;padding:18px 16px;border-left:1px solid var(--hair);}
+.pcard-metrics div:first-child{border-left:none;}
+.pcard-metrics b{display:block;font-size:25px;line-height:1.05;letter-spacing:-.03em;}
+.pcard-metrics span{display:block;font-size:11px;color:var(--ink-3);margin-top:6px;line-height:1.35;}
+.pcard-body{padding:18px 16px;display:flex;flex-direction:column;gap:12px;flex:1;}
+.pcard-claim{font-size:14px;font-weight:600;line-height:1.4;}
+.pcard-meta{margin-top:auto;padding-top:12px;border-top:1px dashed var(--line);
+  display:flex;justify-content:space-between;gap:10px;font-size:11px;color:var(--ink-3);}
+
+/* ---- 05 two paths ---------------------------------------------- */
+.paths{display:flex;align-items:stretch;gap:0;margin-top:30px;flex-wrap:wrap;}
+.path{flex:1 1 320px;border:1px solid var(--line);background:var(--paper);}
+.path--win{border:2px solid var(--ink);background:var(--fill);z-index:2;}
+.path-head{display:flex;align-items:center;gap:9px;padding:14px 20px;border-bottom:1px solid var(--line);
+  font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-3);}
+.path--win .path-head{color:var(--ink);font-weight:600;background:var(--fill-2);}
+.path-body{padding:20px;}
+.path-line{padding:11px 0;border-top:1px solid var(--hair);font-size:13px;line-height:1.5;color:var(--ink-2);}
+.path-line:first-child{border-top:none;}
+.path--win .path-line{color:var(--ink);}
+.vs{display:flex;align-items:center;justify-content:center;width:52px;flex:none;
+  font-size:11px;letter-spacing:.1em;color:var(--ink-3);}
+.band{display:flex;margin-top:20px;border:1px solid var(--line-2);background:var(--fill);flex-wrap:wrap;}
+.band>div{flex:1 1 200px;padding:22px 20px;border-left:1px solid var(--line);}
+.band>div:first-child{border-left:none;}
+.band b{display:block;font-size:27px;letter-spacing:-.03em;line-height:1.1;}
+.band span{display:block;font-size:12.5px;color:var(--ink-2);margin-top:6px;line-height:1.4;}
+
+/* ---- 06 trust --------------------------------------------------- */
+.tabs{display:flex;margin-top:30px;border-bottom:1px solid var(--line);flex-wrap:wrap;}
+.tab{padding:12px 18px;font-size:12.5px;color:var(--ink-3);border:1px solid transparent;
+  border-bottom:none;margin-bottom:-1px;}
+.tab.is-on{color:var(--ink);font-weight:600;background:var(--paper);
+  border-color:var(--line);border-bottom-color:var(--paper);}
+.panel{padding-top:26px;}
+.panel-head{display:flex;align-items:baseline;justify-content:space-between;gap:16px;flex-wrap:wrap;}
+.panel-head h3{font-size:15px;}
+.panel-head span{font-size:12.5px;color:var(--ink-2);}
+.cell{border:1px solid var(--line);background:var(--paper);padding:14px;}
+.cell b{display:block;font-size:13px;}
+.cell span{display:block;font-size:11.5px;color:var(--ink-2);line-height:1.4;margin-top:3px;}
+.cell--wide{grid-column:span 2;}
+.logorow{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap;}
+
+/* ---- 07 cta / 08 footer ----------------------------------------- */
+.cta{border:1px solid var(--line-2);background:var(--fill);padding:64px 24px;
+  display:flex;flex-direction:column;align-items:center;gap:20px;text-align:center;}
+.cta h2{max-width:20ch;}
+.cta .lead{text-align:center;margin-top:0;}
+.foot-bar{max-width:var(--max);margin:0 auto;padding:30px 24px 56px;border-top:1px solid var(--hair);}
+.foot-in{display:flex;justify-content:space-between;align-items:center;gap:16px;
+  font-size:12px;color:var(--ink-2);}
+
+@media (max-width:980px){
+  .problems,.grid3,.grid4{grid-template-columns:1fr 1fr;}
+  .uc-legend,.uc{grid-template-columns:1fr;}
+  .uc-name,.uc-no{border-right:none;border-bottom:1px solid var(--line);}
+  .uc-legend>*{padding:8px 14px;}
+  .stage-arrow,.vs{display:none;}
+  h1{font-size:30px;max-width:none;}
+  h2{font-size:24px;}
+}
+@media (max-width:620px){
+  .problems,.grid2,.grid3,.grid4{grid-template-columns:1fr;}
+  .pcard-metrics{flex-direction:column;}
+  .pcard-metrics div{border-left:none;border-top:1px solid var(--hair);}
+}

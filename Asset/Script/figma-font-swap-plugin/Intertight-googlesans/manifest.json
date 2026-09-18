@@ -1,0 +1,7 @@
+{
+  "name": "Cleartax Font Swap (Inter Tight/Google Sans)",
+  "id": "cleartax-font-swap-intertight-googlesans-local-dev",
+  "api": "1.0.0",
+  "main": "code.js",
+  "editorType": ["figma"]
+}

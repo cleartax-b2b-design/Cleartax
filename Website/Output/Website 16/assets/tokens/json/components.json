@@ -1,0 +1,100 @@
+[
+  {
+    "name": "--ct-button-primary-primary",
+    "label": "Button / Primary / Primary",
+    "type": "color",
+    "value": "#F3F4F6",
+    "source": "#F3F4F6"
+  },
+  {
+    "name": "--ct-button-primary-primary-hover",
+    "label": "Button / Primary / Primary-hover",
+    "type": "color",
+    "value": "#E5E7EB",
+    "source": "#E5E7EB"
+  },
+  {
+    "name": "--ct-button-primary-primary-focused",
+    "label": "Button / Primary / Primary-focused",
+    "type": "color",
+    "value": "#D1D5DB",
+    "source": "#D1D5DB"
+  },
+  {
+    "name": "--ct-button-primary-primary-pressed",
+    "label": "Button / Primary / Primary-pressed",
+    "type": "color",
+    "value": "#9CA3AF",
+    "source": "#9CA3AF"
+  },
+  {
+    "name": "--ct-button-primary-primary-inverse",
+    "label": "Button / Primary / Primary-Inverse",
+    "type": "color",
+    "value": "#111827",
+    "source": "#111827"
+  },
+  {
+    "name": "--ct-button-primary-primary-hover-inverse",
+    "label": "Button / Primary / Primary-hover-Inverse",
+    "type": "color",
+    "value": "#1F2937",
+    "source": "#1F2937"
+  },
+  {
+    "name": "--ct-button-primary-primary-focused-inverse",
+    "label": "Button / Primary / Primary-focused-inverse",
+    "type": "color",
+    "value": "#111827",
+    "source": "#111827"
+  },
+  {
+    "name": "--ct-button-secondary-secondary",
+    "label": "Button / Secondary / Secondary",
+    "type": "color",
+    "value": "#111827",
+    "source": "#111827"
+  },
+  {
+    "name": "--ct-button-secondary-secondary-hover",
+    "label": "Button / Secondary / Secondary-hover",
+    "type": "color",
+    "value": "#1F2937",
+    "source": "#1F2937"
+  },
+  {
+    "name": "--ct-button-secondary-secondary-focused",
+    "label": "Button / Secondary / Secondary-focused",
+    "type": "color",
+    "value": "#111827",
+    "source": "#111827"
+  },
+  {
+    "name": "--ct-button-secondary-secondary-pressed",
+    "label": "Button / Secondary / Secondary-pressed",
+    "type": "color",
+    "value": "#4B5563",
+    "source": "#4B5563"
+  },
+  {
+    "name": "--ct-button-secondary-secondary-inverse",
+    "label": "Button / Secondary / Secondary-inverse",
+    "type": "color",
+    "value": "#F9FAFB",
+    "source": "#F9FAFB"
+  },
+  {
+    "name": "--ct-button-secondary-secondary-hover-inverse",
+    "label": "Button / Secondary / Secondary-hover-inverse",
+    "type": "color",
+    "value": "#F3F4F6",
+    "source": "#F3F4F6"
+  },
+  {
+    "name": "--ct-button-secondary-secondary-focused-inverse",
+    "label": "Button / Secondary / Secondary-focused-inverse",
+    "type": "color",
+    "value": "#E5E7EB",
+    "source": "#E5E7EB"
+  }
+]

@@ -1,0 +1,121 @@
+[
+  {
+    "name": "--ct-space-xxs",
+    "label": "Space / XXS",
+    "type": "number",
+    "value": "2px",
+    "source": 2
+  },
+  {
+    "name": "--ct-space-xs",
+    "label": "Space / XS",
+    "type": "number",
+    "value": "4px",
+    "source": 4
+  },
+  {
+    "name": "--ct-space-s",
+    "label": "Space / S",
+    "type": "number",
+    "value": "8px",
+    "source": 8
+  },
+  {
+    "name": "--ct-space-m",
+    "label": "Space / M",
+    "type": "number",
+    "value": "12px",
+    "source": 12
+  },
+  {
+    "name": "--ct-space-l",
+    "label": "Space / L",
+    "type": "number",
+    "value": "16px",
+    "source": 16
+  },
+  {
+    "name": "--ct-space-xl",
+    "label": "Space / XL",
+    "type": "number",
+    "value": "24px",
+    "source": 24
+  },
+  {
+    "name": "--ct-space-2-xl",
+    "label": "Space / 2XL",
+    "type": "number",
+    "value": "32px",
+    "source": 32
+  },
+  {
+    "name": "--ct-space-3-xl",
+    "label": "Space / 3XL",
+    "type": "number",
+    "value": "40px",
+    "source": 40
+  },
+  {
+    "name": "--ct-space-4-xl",
+    "label": "Space / 4XL",
+    "type": "number",
+    "value": "48px",
+    "source": 48
+  },
+  {
+    "name": "--ct-space-5-xl",
+    "label": "Space / 5XL",
+    "type": "number",
+    "value": "56px",
+    "source": 56
+  },
+  {
+    "name": "--ct-space-6-xl",
+    "label": "Space / 6XL",
+    "type": "number",
+    "value": "64px",
+    "source": 64
+  },
+  {
+    "name": "--ct-space-7-xl",
+    "label": "Space / 7XL",
+    "type": "number",
+    "value": "72px",
+    "source": 72
+  },
+  {
+    "name": "--ct-space-8-xl",
+    "label": "Space / 8XL",
+    "type": "number",
+    "value": "80px",
+    "source": 80
+  },
+  {
+    "name": "--ct-space-9-xl",
+    "label": "Space / 9XL",
+    "type": "number",
+    "value": "88px",
+    "source": 88
+  },
+  {
+    "name": "--ct-space-10-xl",
+    "label": "Space / 10XL",
+    "type": "number",
+    "value": "96px",
+    "source": 96
+  },
+  {
+    "name": "--ct-space-11-xl",
+    "label": "Space / 11XL",
+    "type": "number",
+    "value": "104px",
+    "source": 104
+  },
+  {
+    "name": "--ct-space-12-xl",
+    "label": "Space / 12XL",
+    "type": "number",
+    "value": "112px",
+    "source": 112
+  }
+]

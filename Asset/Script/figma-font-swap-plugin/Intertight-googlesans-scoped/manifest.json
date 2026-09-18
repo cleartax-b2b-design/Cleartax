@@ -1,0 +1,7 @@
+{
+  "name": "Cleartax Font Swap — SCOPED (Inter Tight/Google Sans)",
+  "id": "cleartax-font-swap-intertight-googlesans-scoped-local-dev",
+  "api": "1.0.0",
+  "main": "code.js",
+  "editorType": ["figma"]
+}

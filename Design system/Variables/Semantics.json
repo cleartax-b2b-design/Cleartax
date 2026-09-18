@@ -19,7 +19,7 @@
         ],
         "com.figma.aliasData": {
           "targetVariableId": "VariableID:f6e0b0b0e54db2bdb3e0fd4aa0f6bd0f86ca0541/-1:-1",
-          "targetVariableName": "Primary/950",
+          "targetVariableName": "Vault Navy/950",
           "targetVariableSetId": "VariableCollectionId:13fdb7af6ee3d54740af80c4447ee4b735106157/-1:-1",
           "targetVariableSetName": "Primitives"
         }
@@ -30,12 +30,12 @@
       "$value": {
         "colorSpace": "srgb",
         "components": [
-          0.40392157435417175,
-          0.47058823704719543,
-          0.5647059082984924
+          0.41960784792900085,
+          0.4470588266849518,
+          0.501960813999176
         ],
         "alpha": 1,
-        "hex": "#677890"
+        "hex": "#6B7280"
       },
       "$extensions": {
         "com.figma.variableId": "VariableID:9668:7532",
@@ -43,8 +43,8 @@
           "ALL_SCOPES"
         ],
         "com.figma.aliasData": {
-          "targetVariableId": "VariableID:3b780cc3e0366a52a5de94629d3b095a649d90da/-1:-1",
-          "targetVariableName": "Secondary/Slate/500",
+          "targetVariableId": "VariableID:6072915ecfb2a2935d8d56cc7482de8d6f407085/-1:-1",
+          "targetVariableName": "Neutral/500",
           "targetVariableSetId": "VariableCollectionId:13fdb7af6ee3d54740af80c4447ee4b735106157/-1:-1",
           "targetVariableSetName": "Primitives"
         }
@@ -55,12 +55,12 @@
       "$value": {
         "colorSpace": "srgb",
         "components": [
-          0.12156862765550613,
-          0.16078431904315948,
-          0.21568627655506134
+          0.6117647290229797,
+          0.6392157077789307,
+          0.686274528503418
         ],
         "alpha": 1,
-        "hex": "#1F2937"
+        "hex": "#9CA3AF"
       },
       "$extensions": {
         "com.figma.variableId": "VariableID:9668:7570",
@@ -68,8 +68,8 @@
           "ALL_SCOPES"
         ],
         "com.figma.aliasData": {
-          "targetVariableId": "VariableID:a77253fe72092957966fc53d24584793b32a692c/-1:-1",
-          "targetVariableName": "Neutral/800",
+          "targetVariableId": "VariableID:ce2578a58eae923fe30bb8e3f31279071b144b45/-1:-1",
+          "targetVariableName": "Neutral/400",
           "targetVariableSetId": "VariableCollectionId:13fdb7af6ee3d54740af80c4447ee4b735106157/-1:-1",
           "targetVariableSetName": "Primitives"
         }
@@ -94,7 +94,7 @@
         ],
         "com.figma.aliasData": {
           "targetVariableId": "VariableID:54da5c39a9e22fcb1e32f247e1421957b8da6872/-1:-1",
-          "targetVariableName": "Primary/50",
+          "targetVariableName": "Vault Navy/50",
           "targetVariableSetId": "VariableCollectionId:13fdb7af6ee3d54740af80c4447ee4b735106157/-1:-1",
           "targetVariableSetName": "Primitives"
         }
@@ -496,7 +496,7 @@
             ],
             "com.figma.aliasData": {
               "targetVariableId": "VariableID:01fb40a66b5ad8ff3b6a54a4d2967bea3a66b93b/-1:-1",
-              "targetVariableName": "Secondary/Indigo/50",
+              "targetVariableName": "Nova Blue/50",
               "targetVariableSetId": "VariableCollectionId:13fdb7af6ee3d54740af80c4447ee4b735106157/-1:-1",
               "targetVariableSetName": "Primitives"
             }
@@ -521,7 +521,7 @@
             ],
             "com.figma.aliasData": {
               "targetVariableId": "VariableID:ebc328c6cacdc52c19af092311a429f9d4c36870/-1:-1",
-              "targetVariableName": "Secondary/Indigo/500",
+              "targetVariableName": "Nova Blue/500",
               "targetVariableSetId": "VariableCollectionId:13fdb7af6ee3d54740af80c4447ee4b735106157/-1:-1",
               "targetVariableSetName": "Primitives"
             }
@@ -546,7 +546,7 @@
             ],
             "com.figma.aliasData": {
               "targetVariableId": "VariableID:a149c419047dac442b15719bb6a0d2eaea00bb83/-1:-1",
-              "targetVariableName": "Secondary/Indigo/600",
+              "targetVariableName": "Nova Blue/600",
               "targetVariableSetId": "VariableCollectionId:13fdb7af6ee3d54740af80c4447ee4b735106157/-1:-1",
               "targetVariableSetName": "Primitives"
             }
@@ -596,7 +596,7 @@
             ],
             "com.figma.aliasData": {
               "targetVariableId": "VariableID:01fb40a66b5ad8ff3b6a54a4d2967bea3a66b93b/-1:-1",
-              "targetVariableName": "Secondary/Indigo/50",
+              "targetVariableName": "Nova Blue/50",
               "targetVariableSetId": "VariableCollectionId:13fdb7af6ee3d54740af80c4447ee4b735106157/-1:-1",
               "targetVariableSetName": "Primitives"
             }
@@ -621,7 +621,7 @@
             ],
             "com.figma.aliasData": {
               "targetVariableId": "VariableID:ebc328c6cacdc52c19af092311a429f9d4c36870/-1:-1",
-              "targetVariableName": "Secondary/Indigo/500",
+              "targetVariableName": "Nova Blue/500",
               "targetVariableSetId": "VariableCollectionId:13fdb7af6ee3d54740af80c4447ee4b735106157/-1:-1",
               "targetVariableSetName": "Primitives"
             }
@@ -646,7 +646,7 @@
             ],
             "com.figma.aliasData": {
               "targetVariableId": "VariableID:ebc328c6cacdc52c19af092311a429f9d4c36870/-1:-1",
-              "targetVariableName": "Secondary/Indigo/500",
+              "targetVariableName": "Nova Blue/500",
               "targetVariableSetId": "VariableCollectionId:13fdb7af6ee3d54740af80c4447ee4b735106157/-1:-1",
               "targetVariableSetName": "Primitives"
             }
@@ -673,7 +673,7 @@
             ],
             "com.figma.aliasData": {
               "targetVariableId": "VariableID:ebc328c6cacdc52c19af092311a429f9d4c36870/-1:-1",
-              "targetVariableName": "Secondary/Indigo/500",
+              "targetVariableName": "Nova Blue/500",
               "targetVariableSetId": "VariableCollectionId:13fdb7af6ee3d54740af80c4447ee4b735106157/-1:-1",
               "targetVariableSetName": "Primitives"
             }
@@ -698,7 +698,7 @@
             ],
             "com.figma.aliasData": {
               "targetVariableId": "VariableID:ebc328c6cacdc52c19af092311a429f9d4c36870/-1:-1",
-              "targetVariableName": "Secondary/Indigo/500",
+              "targetVariableName": "Nova Blue/500",
               "targetVariableSetId": "VariableCollectionId:13fdb7af6ee3d54740af80c4447ee4b735106157/-1:-1",
               "targetVariableSetName": "Primitives"
             }
@@ -723,7 +723,7 @@
             ],
             "com.figma.aliasData": {
               "targetVariableId": "VariableID:a149c419047dac442b15719bb6a0d2eaea00bb83/-1:-1",
-              "targetVariableName": "Secondary/Indigo/600",
+              "targetVariableName": "Nova Blue/600",
               "targetVariableSetId": "VariableCollectionId:13fdb7af6ee3d54740af80c4447ee4b735106157/-1:-1",
               "targetVariableSetName": "Primitives"
             }
@@ -773,7 +773,7 @@
             ],
             "com.figma.aliasData": {
               "targetVariableId": "VariableID:01fb40a66b5ad8ff3b6a54a4d2967bea3a66b93b/-1:-1",
-              "targetVariableName": "Secondary/Indigo/50",
+              "targetVariableName": "Nova Blue/50",
               "targetVariableSetId": "VariableCollectionId:13fdb7af6ee3d54740af80c4447ee4b735106157/-1:-1",
               "targetVariableSetName": "Primitives"
             }
@@ -800,7 +800,7 @@
             ],
             "com.figma.aliasData": {
               "targetVariableId": "VariableID:ebc328c6cacdc52c19af092311a429f9d4c36870/-1:-1",
-              "targetVariableName": "Secondary/Indigo/500",
+              "targetVariableName": "Nova Blue/500",
               "targetVariableSetId": "VariableCollectionId:13fdb7af6ee3d54740af80c4447ee4b735106157/-1:-1",
               "targetVariableSetName": "Primitives"
             }
@@ -825,7 +825,7 @@
             ],
             "com.figma.aliasData": {
               "targetVariableId": "VariableID:8c4bab703ec4ecbcb4ca434e0fd26382c96323ea/-1:-1",
-              "targetVariableName": "Secondary/Indigo/400",
+              "targetVariableName": "Nova Blue/400",
               "targetVariableSetId": "VariableCollectionId:13fdb7af6ee3d54740af80c4447ee4b735106157/-1:-1",
               "targetVariableSetName": "Primitives"
             }
@@ -850,7 +850,7 @@
             ],
             "com.figma.aliasData": {
               "targetVariableId": "VariableID:a149c419047dac442b15719bb6a0d2eaea00bb83/-1:-1",
-              "targetVariableName": "Secondary/Indigo/600",
+              "targetVariableName": "Nova Blue/600",
               "targetVariableSetId": "VariableCollectionId:13fdb7af6ee3d54740af80c4447ee4b735106157/-1:-1",
               "targetVariableSetName": "Primitives"
             }
@@ -875,7 +875,7 @@
             ],
             "com.figma.aliasData": {
               "targetVariableId": "VariableID:790dd2158006dc710da7a93a98b4f8fe42f23502/-1:-1",
-              "targetVariableName": "Secondary/Indigo/200",
+              "targetVariableName": "Nova Blue/200",
               "targetVariableSetId": "VariableCollectionId:13fdb7af6ee3d54740af80c4447ee4b735106157/-1:-1",
               "targetVariableSetName": "Primitives"
             }
@@ -900,7 +900,7 @@
             ],
             "com.figma.aliasData": {
               "targetVariableId": "VariableID:a149c419047dac442b15719bb6a0d2eaea00bb83/-1:-1",
-              "targetVariableName": "Secondary/Indigo/600",
+              "targetVariableName": "Nova Blue/600",
               "targetVariableSetId": "VariableCollectionId:13fdb7af6ee3d54740af80c4447ee4b735106157/-1:-1",
               "targetVariableSetName": "Primitives"
             }
@@ -1335,6 +1335,33 @@
         }
       }
     },
+    "Page": {
+      "Highlighter": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.9490196108818054,
+            0.9450980424880981,
+            0.9411764740943909
+          ],
+          "alpha": 1,
+          "hex": "#F2F1F0"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:10613:13928",
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ],
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:d3e8f0fb26cb26ba2a1adddcf5b3e09bf6c35c1a/-1:-1",
+            "targetVariableName": "Ledger White/100",
+            "targetVariableSetId": "VariableCollectionId:13fdb7af6ee3d54740af80c4447ee4b735106157/-1:-1",
+            "targetVariableSetName": "Primitives"
+          }
+        }
+      }
+    },
     "Button": {
       "Primary": {
         "Default": {
@@ -1356,7 +1383,7 @@
             ],
             "com.figma.aliasData": {
               "targetVariableId": "VariableID:ebc328c6cacdc52c19af092311a429f9d4c36870/-1:-1",
-              "targetVariableName": "Secondary/Indigo/500",
+              "targetVariableName": "Nova Blue/500",
               "targetVariableSetId": "VariableCollectionId:13fdb7af6ee3d54740af80c4447ee4b735106157/-1:-1",
               "targetVariableSetName": "Primitives"
             }
@@ -1381,7 +1408,7 @@
             ],
             "com.figma.aliasData": {
               "targetVariableId": "VariableID:c53a4cc562754293e07a498dee7b041033ddaa76/-1:-1",
-              "targetVariableName": "Secondary/Indigo/100",
+              "targetVariableName": "Nova Blue/100",
               "targetVariableSetId": "VariableCollectionId:13fdb7af6ee3d54740af80c4447ee4b735106157/-1:-1",
               "targetVariableSetName": "Primitives"
             }
@@ -1392,12 +1419,12 @@
           "$value": {
             "colorSpace": "srgb",
             "components": [
-              0.8666666746139526,
-              0.8823529481887817,
+              1,
+              1,
               1
             ],
             "alpha": 1,
-            "hex": "#DDE1FF"
+            "hex": "#FFFFFF"
           },
           "$extensions": {
             "com.figma.variableId": "VariableID:9951:56625",
@@ -1405,8 +1432,8 @@
               "ALL_SCOPES"
             ],
             "com.figma.aliasData": {
-              "targetVariableId": "VariableID:c53a4cc562754293e07a498dee7b041033ddaa76/-1:-1",
-              "targetVariableName": "Secondary/Indigo/100",
+              "targetVariableId": "VariableID:455da8766d7841c3dd4a04d050f378cbb83d5060/-1:-1",
+              "targetVariableName": "Generic/100",
               "targetVariableSetId": "VariableCollectionId:13fdb7af6ee3d54740af80c4447ee4b735106157/-1:-1",
               "targetVariableSetName": "Primitives"
             }
@@ -1431,7 +1458,7 @@
             ],
             "com.figma.aliasData": {
               "targetVariableId": "VariableID:ebc328c6cacdc52c19af092311a429f9d4c36870/-1:-1",
-              "targetVariableName": "Secondary/Indigo/500",
+              "targetVariableName": "Nova Blue/500",
               "targetVariableSetId": "VariableCollectionId:13fdb7af6ee3d54740af80c4447ee4b735106157/-1:-1",
               "targetVariableSetName": "Primitives"
             }
@@ -1456,7 +1483,7 @@
             ],
             "com.figma.aliasData": {
               "targetVariableId": "VariableID:790dd2158006dc710da7a93a98b4f8fe42f23502/-1:-1",
-              "targetVariableName": "Secondary/Indigo/200",
+              "targetVariableName": "Nova Blue/200",
               "targetVariableSetId": "VariableCollectionId:13fdb7af6ee3d54740af80c4447ee4b735106157/-1:-1",
               "targetVariableSetName": "Primitives"
             }
@@ -1506,7 +1533,7 @@
             ],
             "com.figma.aliasData": {
               "targetVariableId": "VariableID:a149c419047dac442b15719bb6a0d2eaea00bb83/-1:-1",
-              "targetVariableName": "Secondary/Indigo/600",
+              "targetVariableName": "Nova Blue/600",
               "targetVariableSetId": "VariableCollectionId:13fdb7af6ee3d54740af80c4447ee4b735106157/-1:-1",
               "targetVariableSetName": "Primitives"
             }
@@ -1533,7 +1560,7 @@
             ],
             "com.figma.aliasData": {
               "targetVariableId": "VariableID:c53a4cc562754293e07a498dee7b041033ddaa76/-1:-1",
-              "targetVariableName": "Secondary/Indigo/100",
+              "targetVariableName": "Nova Blue/100",
               "targetVariableSetId": "VariableCollectionId:13fdb7af6ee3d54740af80c4447ee4b735106157/-1:-1",
               "targetVariableSetName": "Primitives"
             }
@@ -1558,7 +1585,7 @@
             ],
             "com.figma.aliasData": {
               "targetVariableId": "VariableID:790dd2158006dc710da7a93a98b4f8fe42f23502/-1:-1",
-              "targetVariableName": "Secondary/Indigo/200",
+              "targetVariableName": "Nova Blue/200",
               "targetVariableSetId": "VariableCollectionId:13fdb7af6ee3d54740af80c4447ee4b735106157/-1:-1",
               "targetVariableSetName": "Primitives"
             }
@@ -1583,7 +1610,7 @@
             ],
             "com.figma.aliasData": {
               "targetVariableId": "VariableID:da1cd25d1575ddc25c6ff23a4fad7b1d11f987b9/-1:-1",
-              "targetVariableName": "Secondary/Indigo/300",
+              "targetVariableName": "Nova Blue/300",
               "targetVariableSetId": "VariableCollectionId:13fdb7af6ee3d54740af80c4447ee4b735106157/-1:-1",
               "targetVariableSetName": "Primitives"
             }
@@ -1633,7 +1660,7 @@
             ],
             "com.figma.aliasData": {
               "targetVariableId": "VariableID:8c4bab703ec4ecbcb4ca434e0fd26382c96323ea/-1:-1",
-              "targetVariableName": "Secondary/Indigo/400",
+              "targetVariableName": "Nova Blue/400",
               "targetVariableSetId": "VariableCollectionId:13fdb7af6ee3d54740af80c4447ee4b735106157/-1:-1",
               "targetVariableSetName": "Primitives"
             }
@@ -1660,7 +1687,7 @@
             ],
             "com.figma.aliasData": {
               "targetVariableId": "VariableID:ebc328c6cacdc52c19af092311a429f9d4c36870/-1:-1",
-              "targetVariableName": "Secondary/Indigo/500",
+              "targetVariableName": "Nova Blue/500",
               "targetVariableSetId": "VariableCollectionId:13fdb7af6ee3d54740af80c4447ee4b735106157/-1:-1",
               "targetVariableSetName": "Primitives"
             }
@@ -1685,7 +1712,7 @@
             ],
             "com.figma.aliasData": {
               "targetVariableId": "VariableID:8c4bab703ec4ecbcb4ca434e0fd26382c96323ea/-1:-1",
-              "targetVariableName": "Secondary/Indigo/400",
+              "targetVariableName": "Nova Blue/400",
               "targetVariableSetId": "VariableCollectionId:13fdb7af6ee3d54740af80c4447ee4b735106157/-1:-1",
               "targetVariableSetName": "Primitives"
             }
@@ -1710,7 +1737,7 @@
             ],
             "com.figma.aliasData": {
               "targetVariableId": "VariableID:a149c419047dac442b15719bb6a0d2eaea00bb83/-1:-1",
-              "targetVariableName": "Secondary/Indigo/600",
+              "targetVariableName": "Nova Blue/600",
               "targetVariableSetId": "VariableCollectionId:13fdb7af6ee3d54740af80c4447ee4b735106157/-1:-1",
               "targetVariableSetName": "Primitives"
             }
@@ -1760,7 +1787,7 @@
             ],
             "com.figma.aliasData": {
               "targetVariableId": "VariableID:a149c419047dac442b15719bb6a0d2eaea00bb83/-1:-1",
-              "targetVariableName": "Secondary/Indigo/600",
+              "targetVariableName": "Nova Blue/600",
               "targetVariableSetId": "VariableCollectionId:13fdb7af6ee3d54740af80c4447ee4b735106157/-1:-1",
               "targetVariableSetName": "Primitives"
             }

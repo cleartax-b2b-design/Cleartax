@@ -1,124 +1,176 @@
 ---
 name: website-skill
-description: Build Cleartax-branded websites, landing pages, and webpages using Cleartax's real design system (brand colors, Nohemi/Gilroy typography scale, logo) plus proven component and animation patterns (GSAP ScrollTrigger, an optional Three.js hero, marquees, pinned timelines). Use whenever asked to build, create, redesign, or recreate a Cleartax website, landing page, or marketing webpage.
+description: Design Cleartax websites, landing pages and webpages as Figma mockups, replicating the established Cleartax web design language and using only the approved published design-system components. Use whenever asked to build, create, redesign, or recreate a Cleartax website, landing page, or marketing webpage.
 ---
 
 # Cleartax Website Skill
 
-## Overview
+## Role
 
-Use this skill to build self-contained HTML/CSS/JS websites and landing pages that read as native Cleartax collateral — not a generic template, and not a clone of whatever visual style a reference site happened to use. When working from a reference site (for animation/structure inspiration) or an existing flow doc/wireframe, reskin it into Cleartax's current brand system every time.
+You are a professional website designer who follows the design system and design language provided for Cleartax, exclusively. You are not inventing a visual language — you are applying an existing one.
 
-Typical asks this covers: "build a landing page for X", "create a website like \<reference\> for Cleartax", "recreate this page with our design system", "add a new section to the \<market\> website".
+## Hard rules
 
-A finished reference implementation of this skill lives at `Website/Cleartax WIP/Landing Page/` — a full GSAP + Three.js landing page built for the UAE e-invoicing mandate. Read it for concrete examples of every pattern below before building something new.
+**Do NOT:**
+- Introduce new text styles, variables, colours, spacing values, effects, or any other new design primitive — unless the user gives a clear green signal for it. If a design calls for something that does not exist in the approved set, **stop and ask**.
+- Refer to, reuse, or take cues from any earlier website/wireframe work in this project. Prior local HTML builds, greyscale wireframes, and past mockups are **out of scope as references**. Start from the design style reference below, every time.
+- Use any design-system component outside the approved list below without asking first.
+- Touch, move, resize, restyle or reorganise anything that already exists on the output page.
 
-> **Paths below were last verified 2026-07-11.** This project's folders have moved once already (a full top-level reorg, likely from a Google Drive re-sync) without any corresponding update here, which left this skill silently pointing at dead paths. If a path below doesn't resolve, don't guess a nearby-sounding folder — re-run a quick `find`/`ls` sweep from the project root for the actual current name before continuing, and update this file once you confirm the new location.
+## Execution order (mandatory)
 
-## Required References
+1. **Ask the user for the website content first.** Never start designing from assumed or invented copy. If content was not supplied with the request, request it and wait.
+2. **State your understanding before designing** — the design language you will apply, the section-by-section structure you intend, which approved components you will use, and anything you need a green signal for. Wait for confirmation.
+3. Only then build, in Figma.
 
-Read these instead of hardcoding values — they are the source of truth and can change:
+## 0 · Preflight: fonts (do this FIRST, before any clone or text)
 
-- `Design system/Variables/*.json` — color and layout tokens as flat, unzipped JSON files (`Primitives.json`, `Semantics.json`, `Typography.json`, `Spacing.json`, `Border.json`, `Layout.json`, `Components.json`). There is currently **no per-market split** — `Semantics.json` is a single file with top-level `Content`/`Background`/`Border`/`Surface`/`Overlay` categories, not a folder of market variants. If a market-specific look is needed, check whether that's represented as nested keys inside this one file before assuming it doesn't exist.
-- `Design system/Fonts/Typograpghy Style Guide.pdf` — the exact type scale (sizes, line-heights, weights) for Display, H1–H6, Paragraph, Label, and Overline (filename has a typo in the source file itself — that's not a typo introduced here). **This is the only source for letter-spacing too**: it lists no tracking value for any named style, meaning all of them use the scale's `None` (0) default — don't invent negative tracking on headings.
-- `Design system/Fonts/Nohemi/Web-TT/*.woff2` and `Design system/Fonts/Gilroy - font/*.otf` — the two brand typefaces (Nohemi has woff2; Gilroy is otf-only)
-- `Design system/Logo/Cleartax-logo-*.png` (also `Logo.svg` / `Logo-dark.svg`) — the only acceptable logo marks. Never render the logo as typed text.
-- The relevant `Website/<Country or campaign>/.../*flow.pdf` and any mockup/icon assets in that folder — content, section order, and copy come from there, not from imagination. The active project lives at `Website/Cleartax WIP/` (flow doc under `Website-flow/`, the approved design mockup under `Design/`, icon/compliance-badge assets under `Icons/`); older per-market builds live under `Website/Old/<Country>/` (Germany, Global, Malaysia, Oman, Phillipines, Spain, UAE, UK). Look for a matching country/campaign folder before starting from scratch.
+Every one of the Oro file's 88 text styles depends on two families:
 
-## Custom Design Systems (opt-in only — default is always Cleartax)
+| Family | Styles | Weights used |
+|---|---|---|
+| **Inter Tight** | 42 | Medium, SemiBold, Bold |
+| **Google Sans** | 46 | Regular, Medium, SemiBold, Medium Italic |
 
-`Website/custom-design-system/` holds design-system specs for brands **other than** Cleartax (e.g. `DESIGN-coinbase.md`), each a single markdown file with frontmatter (`name`, `description`) followed by `colors`, `typography`, and other token sections in the same spirit as this skill's own Color/Typography sections.
+If either is missing from the running Figma instance, the build cannot start: Figma refuses to `clone()` a text-bearing node, apply a text style, or set `characters` without the font loaded. Symptom is an error on `appendChild` naming the unloaded font.
 
-- **Default behavior is unchanged**: build with Cleartax's own design system (per Required References above) unless told otherwise. Do not open or apply anything from this folder on a normal request.
-- **Only use a file from this folder when the user explicitly names it** — e.g. "build this using the coinbase design system" or references `DESIGN-coinbase.md` directly. Match against the filename and the frontmatter `name` field.
-- When triggered, that file's `colors`/`typography`/token sections fully replace Cleartax's own tokens for that build (fonts, palette, spacing, tone) — but the Component Library, Animation Conventions, and Known Pitfalls Checklist below still apply, since those are structural/engineering patterns, not brand-specific.
-- If the user names a design system that has no matching file in `Website/custom-design-system/`, say so rather than inventing one — don't guess at an unlisted brand's tokens.
-- Some brand specs explicitly discourage certain default conventions of this skill (e.g. inventing dashboard mockup data, or using a pinned horizontal-scroll timeline for roadmap content) — when a custom design system's own Do's/Don'ts contradict a default in this skill, the custom system's explicit guidance wins for that build; note the deliberate divergence rather than silently blending the two.
+Run this check before anything else:
 
-## Color Tokens (Cleartax brand, from Primitives)
+```js
+const all = await figma.listAvailableFontsAsync();
+const fams = new Set(all.map(f => f.fontName.family));
+return { interTight: fams.has("Inter Tight"), googleSans: fams.has("Google Sans") };
+```
 
-Always re-verify against the token files before a build — these are a starting reference, not a substitute for reading the source:
+Near-misses that are NOT substitutes and will show up in the font list: `Google Sans Flex`, `Google Sans Code`, `Inter`.
 
-| Token | Hex |
+If a family is missing, **stop and tell the user** — do not substitute. Swapping fonts changes every text style on the page and is exactly the kind of "something new" that needs an explicit green signal. And never repoint the shared text styles at a substitute family: that rewrites type across every page in the file, including existing work.
+
+## 1 · Design style reference
+
+**File:** `c6vfsoBMO135m1Nql8oiGy` — *Cleartax | Oro*
+**Page:** `12921:14542` — "Website for Development"
+
+Replicate the format and design language of the pages on this canvas. It holds ~30 built pages (Global Invoicing, Non-India Homepage, India Homepage, Regional/FR, Delivery, Integration, Scale & Security, Blog list/detail, Contact, Careers, About, Press, Direct/Indirect Tax Compliance). Open the closest-matching page to whatever is being designed and follow its construction.
+
+Observed language (verify against the file each time — do not treat this list as the source of truth):
+- 1440 width; full-bleed `Container - <Name>` frames stacked vertically, one per fold.
+- Centred section headers: large bold near-black/navy headline + muted grey supporting line beneath, narrow measure.
+- Hero: oversized two-line headline, one key word knocked out on a lime/neon highlight block; primary indigo/violet filled button + white outlined secondary button, centred.
+- White cards with soft rounded corners and light hairline borders on near-white ground; generous whitespace.
+- Indigo used for links and primary actions; lime used sparingly as an accent/highlight.
+
+## 2 · Design system
+
+**File:** `kOuvzveP1oEWwJHRvsgfZy` — *Cleartax | Design System - WIP* (published library)
+**Library key:** `lk-97da76fc94c9952fe701865f415af943cd30ce6509b77a2ac4caa4e218311bf7f791c9a737f458c59d4df8a9d390d904e463279a38bf2f80ce540028e57deb81`
+**Entry node:** `83:6566`
+
+Components resolve by key via `search_design_system` (note: the server clamps batched queries — expect to issue them one at a time) and are inserted with `importComponentByKeyAsync`.
+
+**Approved for use — nothing else:**
+
+| Allowed |
+|---|
+| Badge · Button / Buttons · Breadcrumb · Dropdowns · Logo |
+| Colors · Typography · Spacing · Layout grids · Iconography · Accessibility |
+
+Anything outside this list — **ask the user directly before proceeding.** Do not substitute a lookalike, and do not hand-build a replacement for a component that exists but is not yet approved.
+
+### Granted by the user (2026-09-17)
+
+**Pattern — approved for use.** The dot-grid background is not a component or an instance; in the reference it is hand-tiled geometry:
+
+```
+BG frame            1440 × 810
+└─ column frame      206 × 810   (× 7 across)
+   └─ row frame      206 ×  82   (× 8 down)
+      └─ Ellipse       4 ×   4   (× 32 per row tile)
+```
+
+Reference instance: `13049:16566` ("BG", inside `Container - Hero` → `13049:16565`). **Prefer `clone()` of that node over rebuilding it** — cloning reuses their existing asset exactly and introduces nothing new. Oro also has a `Pattern` page (`11716:68`) with `Pattern` (`11716:536`) and a `Swatch`; the design system file has a `Patterns - WIP 🚧` page with the explored styles and a `.current` marker (`10613:12366`).
+
+**Illustrations — use a placeholder instead.** Do not place illustration artwork. Mark the area with a block filled using the published paint style:
+
+| Style | `Visual Placeholder` |
 |---|---|
-| Purple/400 | `#925CFF` |
-| Purple/500 (primary accent) | `#7733FF` |
-| Purple/600 (hover/pressed) | `#5F29CC` |
-| Purple/700 | `#471F99` |
-| Purple/800 | `#301466` |
-| Purple/900 | `#180A33` |
-| Violet/300 (accent text on dark) | `#D685FF` |
-| Violet/400 | `#C95CFF` |
-| Violet/500 | `#BB33FF` |
+| Key | `325e2d6053df162b48b0ecee58c811d213ecabeb` |
+| Value | solid `#E8FFE1` |
+| Source | *Cleartax \| Design System - WIP*, published |
 
-Neutrals are chosen per build (a near-black ink for dark sections, off-white paper for light sections) rather than pulled from a single fixed pair — check the market's `Semantics` file for the current ink/paper/muted values.
+Apply by key, never by raw hex:
+```js
+const st = await figma.importStyleByKeyAsync("325e2d6053df162b48b0ecee58c811d213ecabeb");
+await block.setFillStyleIdAsync(st.id);
+```
 
-## Typography — map every text style to a named token
+**Accordion — approved (2026-09-18)** for FAQ sections. The reference FAQ on `Global Invoicing` (`13049:19542`) is built from 5 `Accordion` instances plus `Media / Icon / Unfilled / Plus` and one `Button`; mirror that construction.
 
-Nohemi is used for Display and H1–H6 only. Gilroy is used for Paragraph, Label, and Overline. Never use an arbitrary in-between size — always round to the nearest defined token.
+**Shadows & Blurs — still NOT granted.** Ask before using.
 
-| Category | Desktop size/line-height | Mobile size/line-height | Weights available |
-|---|---|---|---|
-| Display | 52/56 (Large), 44/48 (Small) | — | Medium, Semibold, Bold, Extrabold |
-| H1 | 40/48 | 36/44 | Medium, Semibold, Bold, Extrabold |
-| H2 | 36/44 | 32/40 | Medium, Semibold, Bold, Extrabold |
-| H3 | 32/40 | 28/36 | Medium, Semibold, Bold, Extrabold |
-| H4 | 28/36 | 24/32 | Medium, Semibold, Bold, Extrabold |
-| H5 | 24/32 | 20/28 | Medium, Semibold, Bold, Extrabold |
-| H6 | 20/28 | 18/24 | Medium, Semibold, Bold, Extrabold |
-| Paragraph Large/Medium/Small/XSmall | 18/28, 16/24, 14/20, 12/20 | same | Regular, Medium, Semibold (+ Underline/Strikethrough/Italic) |
-| Overline Large/Small | 14/20, 12/20 | same | Semibold |
-| Label Large/Medium/Small/XSmall | 16/18, 14/16, 12/14, 10/14 | same | Regular, Medium, Semibold |
+## 3 · Tooling
 
-**Letter-spacing rule**: every named style above uses `None` (0px) — that's the documented default, not a gap in the spec. The separate letter-spacing scale (`2XS` −2px, `XS` −1px, `S` −0.5px, `None` 0, `XS+` +0.5px, `S+` +1px, `M+` +2px) exists as a deliberate, optional override, not something to bake into headings/body text. The one place it's appropriate: uppercase eyebrow/overline micro-copy reads better with `S+` or `M+` tracking. Don't add negative tracking to large display headlines "because it looks more premium" — the actual spec doesn't do that.
+Figma MCP only. Design directly in Figma — this skill does not produce local HTML/CSS mockups.
 
-Default heading weight across a page: Semibold, with Extrabold reserved for a hero/display moment that should stand out from the rest of the hierarchy.
+## 4 · Output location
 
-## Component Library
+**File:** `c6vfsoBMO135m1Nql8oiGy` — *Cleartax | Oro*
+**Page:** `3314:89653` — "Website Mockup"
 
-Reuse these patterns rather than inventing new ones per build — see the reference implementation for full code.
+**Do not disturb any existing work on this page.** As of the last survey it held 51 top-level nodes spanning roughly `x 0 → 87,600`, `y 0 → 69,900`, including sections named `.brainstorm`, `.trash`, `WIP - Not for dev`, `.general - components`, `.blog - components`, `.non-india homepage - components`, plus several page mockups and component sets.
 
-- **Nav** — fixed, transparent over the hero, transitions to a solid/blurred bar (`backdrop-filter: blur`) once scrolled past the hero; swaps a light-on-dark logo for a dark-on-light one at the same breakpoint.
-- **Hero** — big Nohemi headline animated in with a line-by-line reveal (each line wrapped in an `overflow:hidden` span, inner span starts at `translateY(110%)` and animates to `0%`), optionally over a Three.js canvas background (see Animation Conventions).
-- **Section-head rhythm** — eyebrow → heading → body copy → optional CTA button, as a flex column with a *graduated* gap: ~16px eyebrow→heading, ~24px heading→body, ~32–40px body→CTA. Never leave a heading/body/CTA cluster to plain block-margin defaults — that's how a CTA button ends up sitting flush against the paragraph above it with zero gap (a real bug caught in this project). If a section's eyebrow sits outside a flex-column wrapper (a "naked" eyebrow followed directly by something else, e.g. a logo ticker), give it an explicit `margin-bottom` of at least 12–16px — don't rely on inherited spacing.
-- **Buttons** — the primary CTA (`.btn--primary`, e.g. "Book a demo") should default to the brand accent color, not a neutral ink/black — it's the action you want taken, so it should look like it. Reserve a neutral/dark variant for secondary emphasis (`.btn--dark`), and a bordered variant for tertiary actions (`.btn--outline`/`.btn--ghost`).
-- **Bento/card grids** — a `grid-template-columns: repeat(3,1fr)` with one or two cards spanning 2 columns for visual variety. Double-check the actual resulting layout (which cards end up adjacent to which) before shipping — a wide card can silently wrap to its own row and end up nowhere near the card it was supposed to sit beside.
-- **Pinned horizontal timeline** — a horizontally-scrolling card track pinned via `ScrollTrigger` (`pin: true, scrub: 1`), driving `track.scrollLeft` from scroll progress. Good for a compliance roadmap / mandate timeline / step sequence — unless the active design system's own documentation explicitly favors an unframed, rule-separated list instead (some editorial-leaning brand specs do; follow that brand's own guidance when it says so).
-- **Marquee/ticker** — see Animation Conventions below; this has a specific correct implementation and an easy-to-get-wrong one.
-- **FAQ accordion** — click-to-expand with `gsap.to(answer, {height: ...})`; only one item open at a time reads cleaner than allowing several.
-- **CTA band + form** — a two-column band (copy left, form right) near the end of the page, distinct from the primary hero CTA, for a second conversion moment.
-- **Footer** — multi-column link groups + a bottom bar (address/legal/compliance badges).
+Before placing anything: re-survey the page's children, compute the occupied bounds, and position new work in clearly empty space (e.g. to the right of current `maxX` with a wide margin). Never reposition an existing node to make room.
 
-## Animation Conventions
+## 5 · Standing build rules (from user fixes, 2026-09-17)
 
-- **GSAP + ScrollTrigger** via CDN (`cdnjs.cloudflare.com/ajax/libs/gsap/...`) is the default animation engine: `reveal-up` (fade + translateY(28px) → 0) for generic section content, the line-reveal technique above for hero-scale headlines, `scrub`-driven pinning for the horizontal timeline, and `once: true` scroll-triggered count-up tweens for stat numbers.
-- **Three.js hero** (optional — only when the subject genuinely calls for a spatial/network/globe moment, not by default): self-host a **classic UMD build** (e.g. `three@0.128.0/build/three.min.js`, loaded via a plain `<script src>` tag), not the ES-module build. A `<script type="module">` that imports Three.js will silently fail to load at all when the page is opened via plain `file://` — which is exactly how most people will first open a delivered HTML file (double-click, not a local server) — and every animation on the page (not just the 3D scene) can go dark as a result if that failure isn't isolated (see Known Pitfalls).
-- **Marquee/ticker**: duplicate the content exactly once (`track.innerHTML = html + html`) and animate with a **pure CSS keyframe**, `transform: translateX(-50%)`, `animation: marquee-scroll <duration> linear infinite`. Do **not** measure `track.scrollWidth` in JS and drive a GSAP tween to `-width` — if any content in the track is an image (especially `loading="lazy"`), the measurement race against image load produces a visible jump on every loop. The `-50%` CSS approach is always exactly correct regardless of image load timing, because the duplicated content is definitionally half the track's total width once it has laid out. Respect `prefers-reduced-motion` by setting `animation: none`.
+**Container padding is always `80, 80, 80, 80`.** Every `Container - *` frame, no exceptions. Bands that need a full-bleed background (hero, CTA) still take the padding — set the background child to `layoutPositioning = "ABSOLUTE"` so it bleeds while the content stays inset.
 
-## Known Pitfalls Checklist
+**Never set fonts directly on text — apply the file's text styles.** The reference pages (`India Homepage`, `Regional page - cleartax.com/fr`) resolve to this scale:
 
-Real bugs caught while building the reference implementation — check for these before calling a build done:
+| Size / LH | Style |
+|---|---|
+| 52 / 56 | `Display/{Medium,Semibold,Bold}/Large` |
+| 44 / 48 | `Display/*/Small` |
+| 40 / 48 | `Heading/H1/*/Desktop` |
+| 36 / 44 | `Heading/H2/*/Desktop` |
+| 32 / 40 | `Heading/H3/*/Desktop` |
+| 28 / 36 | `Heading/H4/*/Desktop` |
+| 24 / 32 | `Heading/H5/*/Desktop` |
+| 20 / 28 | `Heading/H6/*/Desktop` |
+| 18 / 28 | `Paragraph/Large/{Regular,Medium,Semibold}` |
+| 16 / 24 | `Paragraph/Medium/*` |
+| 14 / 20 | `Paragraph/Small/*`, `Paragraph/Overline/Large` |
+| 12 / 20 | `Paragraph/XSmall/Regular` |
+| 16 / 18 | `Label/Large/{Medium,Semi Bold}` |
+| 14 / 16 | `Label/Medium/*` |
+| 12 / 14 | `Label/Small/Medium` |
 
-1. **Uncaught errors kill everything downstream.** If `DOMContentLoaded` calls several `init*()` functions in sequence and one throws (e.g. `new THREE.WebGLRenderer()` failing because WebGL is unavailable), every init call after it in that same handler silently never runs — GSAP reveals, marquees, FAQ toggles, all of it. Wrap each `init*()` call in its own `try/catch` so one subsystem failing doesn't take down the rest of the page.
-2. **`type="module"` breaks on plain `file://`.** Browsers block ES-module script loading from the `file:` origin. If any script tag uses `type="module"`, the page will look completely broken (blank, unanimated) the moment someone double-clicks the HTML file instead of serving it — which is a completely normal way for this to be opened. Use classic scripts and UMD/global builds instead.
-3. **CSS specificity traps.** A compound selector like `.container p` (specificity 0,1,1) silently beats a single class selector like `.eyebrow` (0,1,0) on the same element, even if the class rule is declared later in the file. If a container has both an eyebrow paragraph and another plain paragraph inside it, scope the second rule with `:not(.eyebrow)` or a dedicated class — don't reach for a bare tag-descendant selector.
-4. **A container's `font-size` doesn't reach a directly-targeted global tag rule.** If there's a global `p { font-size: ... }` reset, setting `font-size` on some ancestor `.some-block` and expecting its `<p>` children to inherit it will silently do nothing — the directly-matched rule on `p` wins over inheritance regardless of the ancestor's specificity. Target the `<p>` (or whatever tag) directly.
-5. **Verify with a plain `file://` open, not only a local server.** A `python -m http.server` test can pass while the real "double-click the file" experience is broken (see pitfall #2). Always test both.
-6. **Lazy-loaded images inside anything measured by JS** (marquees, carousels) will report wrong dimensions before they've loaded. Either don't lazy-load small above-the-fold decorative images like ticker badges, or don't measure pixel widths in JS at all (see the CSS marquee technique above).
-7. **A `position: fixed` element with a hardcoded `top` offset can silently overlap a sticky/fixed nav once the page scrolls.** If a scroll-progress rail (or any fixed overlay) is offset by a banner's height (e.g. `top: 36px` to sit below an announcement bar) but the nav itself is `position: sticky; top: 0` rather than pushed down by that same banner height, the nav will stick flush to the viewport top on scroll while the overlay stays at its hardcoded offset — landing the overlay inside the nav's own bounds instead of below it. Either pin such overlays to `top: 0` (letting z-index/stacking order handle layering) or give the nav a matching, state-aware top offset — don't hardcode two independent offsets that assume the same layout and then let one of them move.
+`Display/*` and `Heading/*` are **Inter Tight**; `Paragraph/*` and `Label/*` are **Google Sans**. Match the family to the tier — a 20/28 card title is `Heading/H6`, i.e. Inter Tight, not Google Sans. There is no style above 52px: an 80px headline is off-system.
 
-## Production Workflow
+**Chrome comes from components:** navbar `.current Navbar`, footer `.current Footer` (COMPONENT_SET key `8680b5574e702b93a2bdfc39c2a40f99badecfec`).
 
-1. **Find or create the right folder.** Look for a matching `Website/<Country or campaign>/` folder before creating a new top-level one (the active project is `Website/Cleartax WIP/`; older per-market builds are under `Website/Old/<Country>/`). Build inside a page-named subfolder there (e.g. `Landing Page/`), self-contained with its own local copy of assets — don't reference the shared `Design system/` folder directly by path from the final build; copy the specific font weights/logo files/icons actually used into a local `assets/` folder so the folder is portable and survives the next reorg.
-2. **Gather real content first.** Read the full flow doc/wireframes for the page before writing any HTML — section order, copy, and CTAs come from there.
-3. **Pull fresh tokens.** Re-check the color/typography source files listed above rather than trusting this doc's reference tables blindly — they can drift out of date.
-4. **Structure**: `index.html`, `css/style.css`, `js/main.js`, `assets/fonts/{nohemi,gilroy}`, `assets/img/`. Self-host GSAP's plugin files or load via CDN (fine either way); self-host Three.js as a classic UMD build if used (not CDN ES module).
-5. **Build**, following the component/animation conventions above and the Known Pitfalls checklist as you go — don't leave them for a final pass.
-6. **QA visually**, not just by reading the code back. Use `scripts/screenshot.py` in this skill folder to render the real page in headless Chrome:
-   - `python3 scripts/screenshot.py --url "file:///abs/path/index.html" --out /tmp/hero.png` — the plain double-click scenario (catches pitfall #2)
-   - Repeat with `--scroll <pixel-value>` for every major section down the page
-   - Repeat with `--mobile` for the small-viewport layout
-   - Read each resulting PNG back and actually look for the specific bugs in the checklist above (dead sections, missing gaps, misaligned grids, wrong button colors) — don't just confirm the page "loaded".
-7. **Deliver** to `Website/Output/Website <N>/`, incrementing `<N>` from whatever the highest existing `Website Output/Website <N>/` folder is — this is the standing convention for all new website builds going forward, not just single-asset PDFs.
+**The navbar is always Fixed.** Figma expresses "Fix position when scrolling" by counting fixed children from the **END** of the children array (the top of the layer stack) — not the start. So `.current Navbar` must be the **last** child of the page frame, absolutely positioned at `x 80, y 48`, with `numberOfFixedChildren >= 1` on the frame. Leave `overflowDirection` as `NONE`; the reference pages all do. Verified: `Global Invoicing` and `Non-India Homepage` use 1 fixed child; `India Homepage` and `Regional page - cleartax.com/fr` use 2 (navbar + a gradient overlay). A navbar sitting after the footer in the layer list is **correct**, not drift — do not "fix" it by moving it to index 0.
 
-`scripts/screenshot.py` requires `websocket-client` (`pip install --user websocket-client` if missing) and a local Chrome/Chromium install.
+### Working around the font block
+
+`setTextStyleIdAsync`, cloning `.current Navbar`, and instantiating `.current Footer` **all fail** in a hosted MCP session — each needs Inter Tight / Google Sans loaded. The workaround is to tag intent from MCP and apply it locally:
+
+1. From MCP, set each text to the target style's exact size / line-height / letter-spacing using the **placeholder** font (`Inter` for Inter Tight, `Google Sans Flex` for Google Sans), then tag it:
+   ```js
+   node.setSharedPluginData("cleartax_ws", "targetTextStyle", "Heading/H1/Medium/Desktop");
+   ```
+   (`setPluginData` is unavailable in this host — `setSharedPluginData` is required.)
+2. Tag the placeholder navbar `replaceWith = "currentNavbar"` and the page `appendFooter = "currentFooter"`.
+3. The user runs **`Website/Scripts/font-swap/`** in Figma desktop with the page frame selected. It binds the real styles, font-maps any untagged text, and swaps in the navbar/footer — no guessing. It aborts before changing anything if Inter Tight / Google Sans are absent, and only ever touches the selection.
+
+> `Asset/Script/figma-font-swap-plugin/` holds the **asset** variants (brochures, case studies) — font mapping only, no text-style awareness. Use it for assets; use `Website/Scripts/font-swap/` for websites.
+
+Because binding a text style also sets the font, a fully tagged page needs only this one plugin — its font-mapping pass exists solely for text that carries no tag.
+
+## Working checklist
+
+- Confirm content received and understanding acknowledged before any mutation.
+- Open the nearest matching page on "Website for Development" and mirror its fold structure and spacing rhythm.
+- Pull every button, badge, breadcrumb, dropdown, logo and icon from the published library — never redraw them.
+- Apply colour and type by the design system's own styles/variables; never type in a raw hex or an off-scale font size.
+- Re-survey the output page and place in free space; verify afterwards that no pre-existing node changed position or size.

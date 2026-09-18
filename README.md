@@ -68,3 +68,15 @@ V4.1 — 2026-08-04
 - Added report-skill.md documenting the Figma-native report build workflow
 - Added Report reference material: UAE Report.pdf, July 2026 Oman e-Invoicing Survey Report content, Report-typography-system.md, deck reference images, and QA bug screenshots
 - Added the "Cleartax 2026 Design System V1.3 (Showcase Deck).pptx" plus supporting Deck bug screenshots
+
+Since V4.1 — 2026-08-05 → 2026-08-14 (current working-directory state)
+- Figma design tokens re-exported with a new font system: Primitives.json, Semantics.json and Typography.json under Design system/Variables/ were regenerated on 2026-08-10, and Typography.json now references Google Sans and Inter Tight instead of the Nohemi/Gilroy/PP Neue Montreal families
+- Added the matching font files under Design system/Fonts/: Google_Sans/ and Google_Sans_Flex/ and Inter_Tight/ (variable + static cuts), plus an empty "Design Token/" placeholder folder and a 21MB Fonts/Archive.zip bundle
+- Note: Cleartax Design System.html (edited 2026-08-07) still renders in PP Neue Montreal — the Google Sans / Inter Tight switch currently exists only in the Figma token export, not in the design-system website
+- Added Design system/Favicon/ — four favicon SVG variants plus Favicon.zip
+- New content docs under Asset/Content: Adidas Belgium Case Study (Named + Anonymized), Meesho Case Study, Hotelkey Case Study (+ anonymised), "Own Audits with Transactional Intelligence", a combined "France switchers and delivery.md" alongside the existing English/French splits, and "Philippines e-Invoicing — CAS Registered Is Not EIS Ready" (Asset 6)
+- Shipped per-channel UTM-tagged PDF variants via the utm-link-helper skill, each set also zipped under Asset/Output/:
+  - ClearTax Phillipines-retail asset — 6 versions (Email, LinkedIn Organic Carousel, LinkedIn Paid, Newsletter, Webinar, Website)
+  - Vendor Discovery (13 Aug FR) — 5 versions (LinkedIn Paid, Newsletter, Webinar, Social Media, Email)
+  - Delivery (13 Aug) — 5 versions (Newsletter, Email, Social Media, Webinar, LinkedIn Paid)
+  - CAS — 6 versions (Email, LN Doc Ad, SM Organic, Website, Webinar, Newsletter)

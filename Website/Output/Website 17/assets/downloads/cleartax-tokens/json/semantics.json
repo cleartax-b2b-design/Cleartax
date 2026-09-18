@@ -1,0 +1,646 @@
+[
+  {
+    "name": "--ct-color-content-primary",
+    "label": "Content / Primary",
+    "type": "color",
+    "value": "#05022A",
+    "source": "#05022A"
+  },
+  {
+    "name": "--ct-color-content-secondary",
+    "label": "Content / Secondary",
+    "type": "color",
+    "value": "#6B7280",
+    "source": "#6B7280"
+  },
+  {
+    "name": "--ct-color-content-tertiary",
+    "label": "Content / Tertiary",
+    "type": "color",
+    "value": "#9CA3AF",
+    "source": "#9CA3AF"
+  },
+  {
+    "name": "--ct-color-content-primary-inverse",
+    "label": "Content / Primary Inverse",
+    "type": "color",
+    "value": "#E6ECFF",
+    "source": "#E6ECFF"
+  },
+  {
+    "name": "--ct-color-content-secondary-inverse",
+    "label": "Content / Secondary Inverse",
+    "type": "color",
+    "value": "#F9FAFB",
+    "source": "#F9FAFB"
+  },
+  {
+    "name": "--ct-color-content-tertiary-inverse",
+    "label": "Content / Tertiary Inverse",
+    "type": "color",
+    "value": "#E5E7EB",
+    "source": "#E5E7EB"
+  },
+  {
+    "name": "--ct-color-content-disabled",
+    "label": "Content / Disabled",
+    "type": "color",
+    "value": "#666666",
+    "source": "#666666"
+  },
+  {
+    "name": "--ct-color-content-link",
+    "label": "Content / Link",
+    "type": "color",
+    "value": "#3355FF",
+    "source": "#3355FF"
+  },
+  {
+    "name": "--ct-color-content-link-hover",
+    "label": "Content / Link Hover",
+    "type": "color",
+    "value": "#2944CC",
+    "source": "#2944CC"
+  },
+  {
+    "name": "--ct-color-content-link-pressed",
+    "label": "Content / Link Pressed",
+    "type": "color",
+    "value": "#1F3399",
+    "source": "#1F3399"
+  },
+  {
+    "name": "--ct-color-content-info",
+    "label": "Content / Info",
+    "type": "color",
+    "value": "#ADBBFF",
+    "source": "#ADBBFF"
+  },
+  {
+    "name": "--ct-color-content-info-bold",
+    "label": "Content / Info Bold",
+    "type": "color",
+    "value": "#2944CC",
+    "source": "#2944CC"
+  },
+  {
+    "name": "--ct-color-content-notice",
+    "label": "Content / Notice",
+    "type": "color",
+    "value": "#FF8000",
+    "source": "#FF8000"
+  },
+  {
+    "name": "--ct-color-content-notice-bold",
+    "label": "Content / Notice Bold",
+    "type": "color",
+    "value": "#994D00",
+    "source": "#994D00"
+  },
+  {
+    "name": "--ct-color-content-negative",
+    "label": "Content / Negative",
+    "type": "color",
+    "value": "#E50000",
+    "source": "#E50000"
+  },
+  {
+    "name": "--ct-color-content-negative-subtle",
+    "label": "Content / Negative Subtle",
+    "type": "color",
+    "value": "#EF6666",
+    "source": "#EF6666"
+  },
+  {
+    "name": "--ct-color-content-negative-bold",
+    "label": "Content / Negative Bold",
+    "type": "color",
+    "value": "#B70000",
+    "source": "#B70000"
+  },
+  {
+    "name": "--ct-color-content-positive",
+    "label": "Content / Positive",
+    "type": "color",
+    "value": "#66C285",
+    "source": "#66C285"
+  },
+  {
+    "name": "--ct-color-content-positivebold",
+    "label": "Content / PositiveBold",
+    "type": "color",
+    "value": "#007A29",
+    "source": "#007A29"
+  },
+  {
+    "name": "--ct-color-content-button-primary-default",
+    "label": "Content / Button / Primary / Default",
+    "type": "color",
+    "value": "#ECEFFF",
+    "source": "#ECEFFF"
+  },
+  {
+    "name": "--ct-color-content-button-primary-hover",
+    "label": "Content / Button / Primary / Hover",
+    "type": "color",
+    "value": "#5446FF",
+    "source": "#5446FF"
+  },
+  {
+    "name": "--ct-color-content-button-primary-pressed",
+    "label": "Content / Button / Primary / Pressed",
+    "type": "color",
+    "value": "#5336F5",
+    "source": "#5336F5"
+  },
+  {
+    "name": "--ct-color-content-button-primary-disabled",
+    "label": "Content / Button / Primary / Disabled",
+    "type": "color",
+    "value": "#A1A1AA",
+    "source": "#A1A1AA"
+  },
+  {
+    "name": "--ct-color-content-button-primary-focused",
+    "label": "Content / Button / Primary / Focused",
+    "type": "color",
+    "value": "#ECEFFF",
+    "source": "#ECEFFF"
+  },
+  {
+    "name": "--ct-color-content-button-primary-default-inverse",
+    "label": "Content / Button / Primary / Default-Inverse",
+    "type": "color",
+    "value": "#5446FF",
+    "source": "#5446FF"
+  },
+  {
+    "name": "--ct-color-content-button-primary-hover-inverse",
+    "label": "Content / Button / Primary / Hover-Inverse",
+    "type": "color",
+    "value": "#5446FF",
+    "source": "#5446FF"
+  },
+  {
+    "name": "--ct-color-content-button-secondary-default",
+    "label": "Content / Button / Secondary / Default",
+    "type": "color",
+    "value": "#5446FF",
+    "source": "#5446FF"
+  },
+  {
+    "name": "--ct-color-content-button-secondary-hover",
+    "label": "Content / Button / Secondary / Hover",
+    "type": "color",
+    "value": "#5446FF",
+    "source": "#5446FF"
+  },
+  {
+    "name": "--ct-color-content-button-secondary-pressed",
+    "label": "Content / Button / Secondary / Pressed",
+    "type": "color",
+    "value": "#5336F5",
+    "source": "#5336F5"
+  },
+  {
+    "name": "--ct-color-content-button-secondary-disabled",
+    "label": "Content / Button / Secondary / Disabled",
+    "type": "color",
+    "value": "#A1A1AA",
+    "source": "#A1A1AA"
+  },
+  {
+    "name": "--ct-color-content-button-secondary-focused",
+    "label": "Content / Button / Secondary / Focused",
+    "type": "color",
+    "value": "#ECEFFF",
+    "source": "#ECEFFF"
+  },
+  {
+    "name": "--ct-color-content-button-link-default",
+    "label": "Content / Button / Link / Default",
+    "type": "color",
+    "value": "#5446FF",
+    "source": "#5446FF"
+  },
+  {
+    "name": "--ct-color-content-button-link-hover",
+    "label": "Content / Button / Link / Hover",
+    "type": "color",
+    "value": "#7675FF",
+    "source": "#7675FF"
+  },
+  {
+    "name": "--ct-color-content-button-link-pressed",
+    "label": "Content / Button / Link / Pressed",
+    "type": "color",
+    "value": "#5336F5",
+    "source": "#5336F5"
+  },
+  {
+    "name": "--ct-color-content-button-link-disabled",
+    "label": "Content / Button / Link / Disabled",
+    "type": "color",
+    "value": "#C2C8FF",
+    "source": "#C2C8FF"
+  },
+  {
+    "name": "--ct-color-content-button-link-focused",
+    "label": "Content / Button / Link / Focused",
+    "type": "color",
+    "value": "#5336F5",
+    "source": "#5336F5"
+  },
+  {
+    "name": "--ct-color-background-primary",
+    "label": "Background / Primary",
+    "type": "color",
+    "value": "#FFFFFF",
+    "source": "#FFFFFF"
+  },
+  {
+    "name": "--ct-color-background-hover",
+    "label": "Background / Hover",
+    "type": "color",
+    "value": "#F2F2F2",
+    "source": "#F2F2F2"
+  },
+  {
+    "name": "--ct-color-background-pressed",
+    "label": "Background / Pressed",
+    "type": "color",
+    "value": "#E5E5E5",
+    "source": "#E5E5E5"
+  },
+  {
+    "name": "--ct-color-background-selected",
+    "label": "Background / Selected",
+    "type": "color",
+    "value": "#D6DDFF",
+    "source": "#D6DDFF"
+  },
+  {
+    "name": "--ct-color-background-disabled",
+    "label": "Background / Disabled",
+    "type": "color",
+    "value": "#F2F2F2",
+    "source": "#F2F2F2"
+  },
+  {
+    "name": "--ct-color-background-inverse",
+    "label": "Background / Inverse",
+    "type": "color",
+    "value": "#0D0D0D",
+    "source": "#0D0D0D"
+  },
+  {
+    "name": "--ct-color-background-brand",
+    "label": "Background / Brand",
+    "type": "color",
+    "value": "#3355FF",
+    "source": "#3355FF"
+  },
+  {
+    "name": "--ct-color-background-brand-hover",
+    "label": "Background / Brand Hover",
+    "type": "color",
+    "value": "#2944CC",
+    "source": "#2944CC"
+  },
+  {
+    "name": "--ct-color-background-brand-pressed",
+    "label": "Background / Brand Pressed",
+    "type": "color",
+    "value": "#1F3399",
+    "source": "#1F3399"
+  },
+  {
+    "name": "--ct-color-background-info",
+    "label": "Background / Info",
+    "type": "color",
+    "value": "#3355FF",
+    "source": "#3355FF"
+  },
+  {
+    "name": "--ct-color-background-info-subtle",
+    "label": "Background / Info Subtle",
+    "type": "color",
+    "value": "#D6DDFF",
+    "source": "#D6DDFF"
+  },
+  {
+    "name": "--ct-color-background-notice",
+    "label": "Background / Notice",
+    "type": "color",
+    "value": "#FF8000",
+    "source": "#FF8000"
+  },
+  {
+    "name": "--ct-color-background-notice-subtle",
+    "label": "Background / Notice Subtle",
+    "type": "color",
+    "value": "#FFE6CC",
+    "source": "#FFE6CC"
+  },
+  {
+    "name": "--ct-color-background-negative",
+    "label": "Background / Negative",
+    "type": "color",
+    "value": "#E50000",
+    "source": "#E50000"
+  },
+  {
+    "name": "--ct-color-background-negative-subtle",
+    "label": "Background / Negative Subtle",
+    "type": "color",
+    "value": "#FACCCC",
+    "source": "#FACCCC"
+  },
+  {
+    "name": "--ct-color-background-positive",
+    "label": "Background / Positive",
+    "type": "color",
+    "value": "#009933",
+    "source": "#009933"
+  },
+  {
+    "name": "--ct-color-background-positive-subtle",
+    "label": "Background / Positive Subtle",
+    "type": "color",
+    "value": "#CCEBD6",
+    "source": "#CCEBD6"
+  },
+  {
+    "name": "--ct-color-background-page-highlighter",
+    "label": "Background / Page / Highlighter",
+    "type": "color",
+    "value": "#F2F1F0",
+    "source": "#F2F1F0"
+  },
+  {
+    "name": "--ct-color-background-button-primary-default",
+    "label": "Background / Button / Primary / Default",
+    "type": "color",
+    "value": "#5446FF",
+    "source": "#5446FF"
+  },
+  {
+    "name": "--ct-color-background-button-primary-default-inverse",
+    "label": "Background / Button / Primary / Default-Inverse",
+    "type": "color",
+    "value": "#DDE1FF",
+    "source": "#DDE1FF"
+  },
+  {
+    "name": "--ct-color-background-button-primary-hover",
+    "label": "Background / Button / Primary / Hover",
+    "type": "color",
+    "value": "#FFFFFF",
+    "source": "#FFFFFF"
+  },
+  {
+    "name": "--ct-color-background-button-primary-hover-inverse",
+    "label": "Background / Button / Primary / Hover-Inverse",
+    "type": "color",
+    "value": "#5446FF",
+    "source": "#5446FF"
+  },
+  {
+    "name": "--ct-color-background-button-primary-pressed",
+    "label": "Background / Button / Primary / Pressed",
+    "type": "color",
+    "value": "#C2C8FF",
+    "source": "#C2C8FF"
+  },
+  {
+    "name": "--ct-color-background-button-primary-disabled",
+    "label": "Background / Button / Primary / Disabled",
+    "type": "color",
+    "value": "#E4E4E7",
+    "source": "#E4E4E7"
+  },
+  {
+    "name": "--ct-color-background-button-primary-focused",
+    "label": "Background / Button / Primary / Focused",
+    "type": "color",
+    "value": "#5336F5",
+    "source": "#5336F5"
+  },
+  {
+    "name": "--ct-color-background-button-secondary-default",
+    "label": "Background / Button / Secondary / Default",
+    "type": "color",
+    "value": "#DDE1FF",
+    "source": "#DDE1FF"
+  },
+  {
+    "name": "--ct-color-background-button-secondary-hover",
+    "label": "Background / Button / Secondary / Hover",
+    "type": "color",
+    "value": "#C2C8FF",
+    "source": "#C2C8FF"
+  },
+  {
+    "name": "--ct-color-background-button-secondary-pressed",
+    "label": "Background / Button / Secondary / Pressed",
+    "type": "color",
+    "value": "#9CA3FF",
+    "source": "#9CA3FF"
+  },
+  {
+    "name": "--ct-color-background-button-secondary-disabled",
+    "label": "Background / Button / Secondary / Disabled",
+    "type": "color",
+    "value": "#E4E4E7",
+    "source": "#E4E4E7"
+  },
+  {
+    "name": "--ct-color-background-button-secondary-focused",
+    "label": "Background / Button / Secondary / Focused",
+    "type": "color",
+    "value": "#7675FF",
+    "source": "#7675FF"
+  },
+  {
+    "name": "--ct-color-background-button-link-default",
+    "label": "Background / Button / Link / Default",
+    "type": "color",
+    "value": "#5446FF",
+    "source": "#5446FF"
+  },
+  {
+    "name": "--ct-color-background-button-link-hover",
+    "label": "Background / Button / Link / Hover",
+    "type": "color",
+    "value": "#7675FF",
+    "source": "#7675FF"
+  },
+  {
+    "name": "--ct-color-background-button-link-pressed",
+    "label": "Background / Button / Link / Pressed",
+    "type": "color",
+    "value": "#5336F5",
+    "source": "#5336F5"
+  },
+  {
+    "name": "--ct-color-background-button-link-disabled",
+    "label": "Background / Button / Link / Disabled",
+    "type": "color",
+    "value": "#A1A1AA",
+    "source": "#A1A1AA"
+  },
+  {
+    "name": "--ct-color-background-button-link-focused",
+    "label": "Background / Button / Link / Focused",
+    "type": "color",
+    "value": "#5336F5",
+    "source": "#5336F5"
+  },
+  {
+    "name": "--ct-color-border-primary",
+    "label": "Border / Primary",
+    "type": "color",
+    "value": "#666666",
+    "source": "#666666"
+  },
+  {
+    "name": "--ct-color-border-secondary",
+    "label": "Border / Secondary",
+    "type": "color",
+    "value": "#999999",
+    "source": "#999999"
+  },
+  {
+    "name": "--ct-color-border-tertiary",
+    "label": "Border / Tertiary",
+    "type": "color",
+    "value": "#CCCCCC",
+    "source": "#CCCCCC"
+  },
+  {
+    "name": "--ct-color-border-disabled",
+    "label": "Border / Disabled",
+    "type": "color",
+    "value": "#CCCCCC",
+    "source": "#CCCCCC"
+  },
+  {
+    "name": "--ct-color-border-brand",
+    "label": "Border / Brand",
+    "type": "color",
+    "value": "#3355FF",
+    "source": "#3355FF"
+  },
+  {
+    "name": "--ct-color-border-inverse",
+    "label": "Border / Inverse",
+    "type": "color",
+    "value": "#FFFFFF",
+    "source": "#FFFFFF"
+  },
+  {
+    "name": "--ct-color-border-focus",
+    "label": "Border / Focus",
+    "type": "color",
+    "value": "#3355FF",
+    "source": "#3355FF"
+  },
+  {
+    "name": "--ct-color-border-info",
+    "label": "Border / Info",
+    "type": "color",
+    "value": "#3355FF",
+    "source": "#3355FF"
+  },
+  {
+    "name": "--ct-color-border-notice",
+    "label": "Border / Notice",
+    "type": "color",
+    "value": "#FF8000",
+    "source": "#FF8000"
+  },
+  {
+    "name": "--ct-color-border-negative",
+    "label": "Border / Negative",
+    "type": "color",
+    "value": "#E50000",
+    "source": "#E50000"
+  },
+  {
+    "name": "--ct-color-border-positive",
+    "label": "Border / Positive",
+    "type": "color",
+    "value": "#009933",
+    "source": "#009933"
+  },
+  {
+    "name": "--ct-color-border-mono",
+    "label": "Border / Mono",
+    "type": "color",
+    "value": "#0D0D0D",
+    "source": "#0D0D0D"
+  },
+  {
+    "name": "--ct-color-surface-l0",
+    "label": "Surface / L0",
+    "type": "color",
+    "value": "#FFFFFF",
+    "source": "#FFFFFF"
+  },
+  {
+    "name": "--ct-color-surface-l1",
+    "label": "Surface / L1",
+    "type": "color",
+    "value": "#FFFFFF",
+    "source": "#FFFFFF"
+  },
+  {
+    "name": "--ct-color-surface-l2",
+    "label": "Surface / L2",
+    "type": "color",
+    "value": "#FFFFFF",
+    "source": "#FFFFFF"
+  },
+  {
+    "name": "--ct-color-surface-l3",
+    "label": "Surface / L3",
+    "type": "color",
+    "value": "#FFFFFF",
+    "source": "#FFFFFF"
+  },
+  {
+    "name": "--ct-color-surface-l4",
+    "label": "Surface / L4",
+    "type": "color",
+    "value": "#FFFFFF",
+    "source": "#FFFFFF"
+  },
+  {
+    "name": "--ct-color-surface-l5",
+    "label": "Surface / L5",
+    "type": "color",
+    "value": "#FFFFFF",
+    "source": "#FFFFFF"
+  },
+  {
+    "name": "--ct-color-surface-l6",
+    "label": "Surface / L6",
+    "type": "color",
+    "value": "#FFFFFF",
+    "source": "#FFFFFF"
+  },
+  {
+    "name": "--ct-color-overlay-primary",
+    "label": "Overlay / Primary",
+    "type": "color",
+    "value": "#000000",
+    "source": "#000000"
+  },
+  {
+    "name": "--ct-color-overlay-50-inverse",
+    "label": "Overlay / 50 Inverse",
+    "type": "color",
+    "value": "#FFFFFF",
+    "source": "#FFFFFF"
+  }
+]

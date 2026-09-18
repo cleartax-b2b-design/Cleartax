@@ -1,0 +1,52 @@
+{
+ "decks": [
+  "decks-01.jpg",
+  "decks-02.jpg",
+  "decks-03.jpg",
+  "decks-04.jpg",
+  "decks-05.jpg",
+  "decks-06.jpg",
+  "decks-07.jpg",
+  "decks-08.jpg",
+  "decks-09.jpg"
+ ],
+ "social": [
+  "social-01.jpg",
+  "social-02.jpg",
+  "social-03.jpg",
+  "social-04.jpg",
+  "social-05.jpg",
+  "social-06.jpg",
+  "social-07.jpg",
+  "social-08.jpg",
+  "social-09.jpg",
+  "social-10.jpg",
+  "social-11.jpg",
+  "social-12.jpg",
+  "social-13.jpg"
+ ],
+ "assets": [
+  "assets-01.jpg",
+  "assets-02.jpg",
+  "assets-03.jpg",
+  "assets-04.jpg",
+  "assets-05.jpg",
+  "assets-06.jpg",
+  "assets-07.jpg",
+  "assets-08.jpg",
+  "assets-09.jpg",
+  "assets-10.jpg"
+ ],
+ "merch": [
+  "merch-01.jpg",
+  "merch-02.jpg",
+  "merch-03.jpg",
+  "merch-04.jpg",
+  "merch-05.jpg",
+  "merch-06.jpg",
+  "merch-07.jpg",
+  "merch-08.jpg",
+  "merch-09.jpg",
+  "merch-10.jpg"
+ ]
+}

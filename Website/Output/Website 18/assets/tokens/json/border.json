@@ -1,0 +1,79 @@
+[
+  {
+    "name": "--ct-radius-circle",
+    "label": "Radius / Circle",
+    "type": "number",
+    "value": "50%",
+    "source": 50
+  },
+  {
+    "name": "--ct-radius-pill",
+    "label": "Radius / Pill",
+    "type": "number",
+    "value": "999px",
+    "source": 999
+  },
+  {
+    "name": "--ct-radius-l",
+    "label": "Radius / L",
+    "type": "number",
+    "value": "16px",
+    "source": 16
+  },
+  {
+    "name": "--ct-radius-m",
+    "label": "Radius / M",
+    "type": "number",
+    "value": "12px",
+    "source": 12
+  },
+  {
+    "name": "--ct-radius-s",
+    "label": "Radius / S",
+    "type": "number",
+    "value": "8px",
+    "source": 8
+  },
+  {
+    "name": "--ct-radius-xs",
+    "label": "Radius / XS",
+    "type": "number",
+    "value": "4px",
+    "source": 4
+  },
+  {
+    "name": "--ct-border-width-xl",
+    "label": "Width / XL",
+    "type": "number",
+    "value": "8px",
+    "source": 8
+  },
+  {
+    "name": "--ct-border-width-l",
+    "label": "Width / L",
+    "type": "number",
+    "value": "4px",
+    "source": 4
+  },
+  {
+    "name": "--ct-border-width-m",
+    "label": "Width / M",
+    "type": "number",
+    "value": "2px",
+    "source": 2
+  },
+  {
+    "name": "--ct-border-width-s",
+    "label": "Width / S",
+    "type": "number",
+    "value": "1.5px",
+    "source": 1.5
+  },
+  {
+    "name": "--ct-border-width-xs",
+    "label": "Width / XS",
+    "type": "number",
+    "value": "1px",
+    "source": 1
+  }
+]

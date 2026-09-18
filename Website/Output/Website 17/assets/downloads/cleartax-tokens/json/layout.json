@@ -1,0 +1,37 @@
+[
+  {
+    "name": "--ct-breakpoint-xl",
+    "label": "Breakpoint / XL",
+    "type": "number",
+    "value": "1440px",
+    "source": 1440
+  },
+  {
+    "name": "--ct-breakpoint-l",
+    "label": "Breakpoint / L",
+    "type": "number",
+    "value": "1024px",
+    "source": 1024
+  },
+  {
+    "name": "--ct-breakpoint-m",
+    "label": "Breakpoint / M",
+    "type": "number",
+    "value": "768px",
+    "source": 768
+  },
+  {
+    "name": "--ct-breakpoint-s",
+    "label": "Breakpoint / S",
+    "type": "number",
+    "value": "393px",
+    "source": 393
+  },
+  {
+    "name": "--ct-max-width-1280",
+    "label": "Max-width / 1280",
+    "type": "number",
+    "value": "1280px",
+    "source": 1280
+  }
+]

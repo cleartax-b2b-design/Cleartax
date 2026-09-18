@@ -1,0 +1,7 @@
+{
+  "name": "Cleartax Website Font Swap",
+  "id": "cleartax-website-font-swap-local-dev",
+  "api": "1.0.0",
+  "main": "code.js",
+  "editorType": ["figma"]
+}

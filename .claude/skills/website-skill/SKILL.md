@@ -149,6 +149,8 @@ Before placing anything: re-survey the page's children, compute the occupied bou
 
 **Chrome comes from components:** navbar `.current Navbar`, footer `.current Footer` (COMPONENT_SET key `8680b5574e702b93a2bdfc39c2a40f99badecfec`).
 
+**Never invent copy — annotate omissions instead.** If the content file leaves a section unwritten (authoring notes like "Add testimonial section here" rather than real copy), do not fabricate text. Build what the file actually supports, and place an **annotation frame beside the page** — outside the page frame, so it cannot affect layout — listing every fold or element that was reduced or omitted and why. Name it `⚠︎ Build notes — <page>` so it is obvious in the layer list and easy to delete once resolved.
+
 **The navbar is always Fixed.** Figma expresses "Fix position when scrolling" by counting fixed children from the **END** of the children array (the top of the layer stack) — not the start. So `.current Navbar` must be the **last** child of the page frame, absolutely positioned at `x 80, y 48`, with `numberOfFixedChildren >= 1` on the frame. Leave `overflowDirection` as `NONE`; the reference pages all do. Verified: `Global Invoicing` and `Non-India Homepage` use 1 fixed child; `India Homepage` and `Regional page - cleartax.com/fr` use 2 (navbar + a gradient overlay). A navbar sitting after the footer in the layer list is **correct**, not drift — do not "fix" it by moving it to index 0.
 
 ### Working around the font block

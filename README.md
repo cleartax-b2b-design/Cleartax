@@ -80,3 +80,33 @@ Since V4.1 — 2026-08-05 → 2026-08-14 (current working-directory state)
   - Vendor Discovery (13 Aug FR) — 5 versions (LinkedIn Paid, Newsletter, Webinar, Social Media, Email)
   - Delivery (13 Aug) — 5 versions (Newsletter, Email, Social Media, Webinar, LinkedIn Paid)
   - CAS — 6 versions (Email, LN Doc Ad, SM Organic, Website, Webinar, Newsletter)
+
+V5 — 2026-09-18 → 2026-09-29
+- Fonts reorganised around the new Google Sans / Inter Tight system:
+  - Google_Sans/ and Inter_Tight/ moved into Design system/Fonts/Typography/ alongside an updated Typography Style Guide.pdf and the Archive.zip bundle
+  - Nohemi, Gilroy, PP Neue Montreal and Google_Sans_Flex moved into Design system/Fonts/Deprecated/
+  - Deleted the superseded Nohemi-Gilroy Typography Style Guide PDF and Typography.zip
+- Primitives.json, Semantics.json and Typography.json under Design system/Variables/ re-exported again
+- New design-system asset folders:
+  - Design system/Isotype/ — Light and Dark isotype sets (9 SVGs each)
+  - Design system/Illustrations/ — Style 1 to Style 6
+  - Design system/Logo dont's/ — logo misuse examples
+  - Design system/Logo for Merch/
+  - Design system/Background/Brand Pattern/ and Brand Pattern - Only Pattern/
+  - Design system/Favicon/ rebuilt as one folder per size (16x16, 32x32, 48x48, 180x180, 192x192, and a 512px PWA icon in a folder named 515x512), replacing the four loose favicon SVGs
+- New Merchandise/ folder: book, booth wall, bottle, box, hoodie, shirt, sticker and visuals mockups
+- Built out Website output folders 16, 17 and 18 (full HTML/CSS/JS builds; Website 18 bundles the complete design-token set as CSS, SCSS, JS and JSON plus the raw Figma exports), plus Website 19 and Website 20 as single-page HTML/CSS layouts
+- Added Website/Scripts/font-swap/ and an Inter Tight / Google Sans variant of the figma-font-swap-plugin (Intertight-googlesans/ and Intertight-googlesans-scoped/)
+- Added the website-skill (.claude/skills/website-skill) and later updated it
+- New website content: India homepage, non-India homepage, and France, Germany, Oman, Philippines and Spain product pages
+- New content docs: August Pulse, Revised Newsletter, Hotelkey PDFs (named + anonymous), ClearTax Germany AI Brochure, Cleartax Brand overview (WIP), and the Philippines CFO e-Invoicing Readiness Index 2026 survey report
+- Added Brochure/Reference/ PDFs: Agentic Commerce, Annual Commerce Playbook 2026, The Onion Problem
+- Shipped UTM-tagged Hotelkey PDFs via the utm-link-helper skill — Anonymous (Hotelkey) in 5 versions (Newsletter, Email, Website, Paid, Social Media) and Hotel Key (Website), zipped as Hotelkey UTM attached.zip, with copies under Asset/Output/Archive/
+
+V5.1 — 2026-10-27
+- Rewrote the asset skill: new Asset/Skill/cleartax-asset-skill/ plus a packaged cleartax-asset-skill.skill, with the previous version moved to Asset/Skill/Archive/
+- Rewrote the deck skill: new Deck/Deck-Skill/cleartax-deck-skill/ plus a packaged cleartax-deck-skill.skill, with the previous version moved to Deck/Deck-Skill/Archive/
+- Updated Website/Scripts/font-swap (code.js + README.md)
+- Added Asset/Content/Qatar_brochure.pdf and Website/Content/Spain New Page.pptx
+- Added .claude/settings.json
+- Removed the eight Cover Gradient / UI Gradient PNGs from Asset/Output/

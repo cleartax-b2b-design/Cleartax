@@ -64,6 +64,18 @@ Shared plugin data, namespace `cleartax_ws`:
 | `replaceWith` | placeholder FAQ row | `accordion` |
 | `accordionSet` / `accordionVariant` / `accordionLabel` | placeholder FAQ row | key, variant, question |
 | `appendFooter` | page frame | `currentFooter` |
+| `navbarSource` | placeholder navbar | node id of a specific navbar to clone (optional) |
+| `footerSource` | page frame | node id of a specific footer to clone (optional) |
+
+A `<kind>Set` value containing a colon is treated as a **node id** rather than
+a library key — local component sets (like `.current Navbar`) are not
+published, so `importComponentSetByKeyAsync` cannot reach them and only
+`getNodeByIdAsync` works.
+
+`navbarSource` / `footerSource` let a page pull its chrome from a named
+reference page rather than the generic component — e.g. the India Homepage
+navbar (`.current Navbar` instance) and its `Footer` frame. A plain FRAME
+source is cloned rather than instantiated.
 
 Website buttons are **`Size=Large`** (46px tall) for both Primary and
 Secondary — that is what `India Homepage` uses throughout, including its hero

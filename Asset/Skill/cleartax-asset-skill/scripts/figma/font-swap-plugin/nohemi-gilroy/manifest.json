@@ -1,0 +1,7 @@
+{
+  "name": "Cleartax Font Swap (Nohemi/Gilroy)",
+  "id": "cleartax-font-swap-nohemi-gilroy-local-dev",
+  "api": "1.0.0",
+  "main": "code.js",
+  "editorType": ["figma"]
+}

@@ -1,0 +1,177 @@
+{
+  "Space": {
+    "XXS": {
+      "$type": "number",
+      "$value": 2,
+      "$extensions": {
+        "com.figma.variableId": "VariableID:9668:6404",
+        "com.figma.scopes": [
+          "GAP"
+        ]
+      }
+    },
+    "XS": {
+      "$type": "number",
+      "$value": 4,
+      "$extensions": {
+        "com.figma.variableId": "VariableID:9668:6406",
+        "com.figma.scopes": [
+          "GAP"
+        ]
+      }
+    },
+    "S": {
+      "$type": "number",
+      "$value": 8,
+      "$extensions": {
+        "com.figma.variableId": "VariableID:9668:6405",
+        "com.figma.scopes": [
+          "GAP"
+        ]
+      }
+    },
+    "M": {
+      "$type": "number",
+      "$value": 12,
+      "$extensions": {
+        "com.figma.variableId": "VariableID:9668:6403",
+        "com.figma.scopes": [
+          "GAP"
+        ]
+      }
+    },
+    "L": {
+      "$type": "number",
+      "$value": 16,
+      "$extensions": {
+        "com.figma.variableId": "VariableID:9668:6408",
+        "com.figma.scopes": [
+          "GAP"
+        ]
+      }
+    },
+    "XL": {
+      "$type": "number",
+      "$value": 24,
+      "$extensions": {
+        "com.figma.variableId": "VariableID:9668:6401",
+        "com.figma.scopes": [
+          "GAP"
+        ]
+      }
+    },
+    "2XL": {
+      "$type": "number",
+      "$value": 32,
+      "$extensions": {
+        "com.figma.variableId": "VariableID:9668:6398",
+        "com.figma.scopes": [
+          "GAP"
+        ]
+      }
+    },
+    "3XL": {
+      "$type": "number",
+      "$value": 40,
+      "$extensions": {
+        "com.figma.variableId": "VariableID:9668:6395",
+        "com.figma.scopes": [
+          "GAP"
+        ]
+      }
+    },
+    "4XL": {
+      "$type": "number",
+      "$value": 48,
+      "$extensions": {
+        "com.figma.variableId": "VariableID:9668:6396",
+        "com.figma.scopes": [
+          "GAP"
+        ]
+      }
+    },
+    "5XL": {
+      "$type": "number",
+      "$value": 56,
+      "$extensions": {
+        "com.figma.variableId": "VariableID:9668:6399",
+        "com.figma.scopes": [
+          "GAP"
+        ]
+      }
+    },
+    "6XL": {
+      "$type": "number",
+      "$value": 64,
+      "$extensions": {
+        "com.figma.variableId": "VariableID:9668:6402",
+        "com.figma.scopes": [
+          "GAP"
+        ]
+      }
+    },
+    "7XL": {
+      "$type": "number",
+      "$value": 72,
+      "$extensions": {
+        "com.figma.variableId": "VariableID:9668:6397",
+        "com.figma.scopes": [
+          "GAP"
+        ]
+      }
+    },
+    "8XL": {
+      "$type": "number",
+      "$value": 80,
+      "$extensions": {
+        "com.figma.variableId": "VariableID:9668:6400",
+        "com.figma.scopes": [
+          "GAP"
+        ]
+      }
+    },
+    "9XL": {
+      "$type": "number",
+      "$value": 88,
+      "$extensions": {
+        "com.figma.variableId": "VariableID:9668:6394",
+        "com.figma.scopes": [
+          "GAP"
+        ]
+      }
+    },
+    "10XL": {
+      "$type": "number",
+      "$value": 96,
+      "$extensions": {
+        "com.figma.variableId": "VariableID:9668:6393",
+        "com.figma.scopes": [
+          "GAP"
+        ]
+      }
+    },
+    "11XL": {
+      "$type": "number",
+      "$value": 104,
+      "$extensions": {
+        "com.figma.variableId": "VariableID:9668:6392",
+        "com.figma.scopes": [
+          "GAP"
+        ]
+      }
+    },
+    "12XL": {
+      "$type": "number",
+      "$value": 112,
+      "$extensions": {
+        "com.figma.variableId": "VariableID:9668:6407",
+        "com.figma.scopes": [
+          "GAP"
+        ]
+      }
+    }
+  },
+  "$extensions": {
+    "com.figma.modeName": "Mode 1"
+  }
+}

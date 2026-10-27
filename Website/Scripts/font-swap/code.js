@@ -165,7 +165,8 @@ async function applyLabel(inst, label) {
 
 // Replace tagged placeholders with the real Design System component.
 // kind = "button" | "badge"; tags are <kind>Set / <kind>Variant / <kind>Label.
-const SET_NAME = { button: 'Button', badge: 'Badge', accordion: 'Accordion' };
+const SET_NAME = { button: 'Button', badge: 'Badge', accordion: 'Accordion',
+  navbar: '.current Navbar' };
 
 async function swapComponents(roots, kind) {
   const slots = [];
@@ -205,8 +206,13 @@ async function swapComponents(roots, kind) {
       // Import per slot — a cached set node can go stale between instantiations.
       let set = null;
       if (key) {
-        try { set = await figma.importComponentSetByKeyAsync(key); }
-        catch (e) { try { set = await figma.importComponentByKeyAsync(key); } catch (e2) { set = null; } }
+        if (key.indexOf(':') !== -1) {
+          // a node id — LOCAL component sets are not importable by key, only by id
+          try { set = await figma.getNodeByIdAsync(key); } catch (e) { set = null; }
+        } else {
+          try { set = await figma.importComponentSetByKeyAsync(key); }
+          catch (e) { try { set = await figma.importComponentByKeyAsync(key); } catch (e2) { set = null; } }
+        }
       }
       if (!set) set = await localSet(SET_NAME[kind] || 'Button');
       if (!set) { failed++; notes.push(tag + ': no ' + kind + ' component set'); continue; }
@@ -229,7 +235,13 @@ async function swapComponents(roots, kind) {
         inst.layoutPositioning = 'ABSOLUTE'; inst.x = slot.x; inst.y = slot.y;
       }
 
-      (await applyLabel(inst, label)).forEach((n) => notes.push(tag + ': ' + n));
+      if (kind === 'navbar') {
+        // createInstance names the node after the variant; restore the canonical
+        // name so pinNavbarFixed() can find it later in this run
+        inst.name = '.current Navbar';
+      } else {
+        (await applyLabel(inst, label)).forEach((n) => notes.push(tag + ': ' + n));
+      }
 
       slot.remove();
       inst = null;
@@ -309,8 +321,17 @@ function pinNavbarFixed(root) {
     nav.layoutPositioning = 'ABSOLUTE';
     nav.x = 80; nav.y = 48;
     try { nav.constraints = { horizontal: 'CENTER', vertical: 'MIN' }; } catch (e) { /* not supported */ }
-    if (!root.numberOfFixedChildren || root.numberOfFixedChildren < 1) {
-      root.numberOfFixedChildren = 1;
+    // India Homepage keeps TWO fixed children — the gradient overlay and the
+    // navbar — as the last two in the array. Match whichever are present.
+    const hasGradient = root.children.some((c) => /Gradient/i.test(c.name));
+    const want = hasGradient ? 2 : 1;
+    if (hasGradient) {
+      const g = root.children.find((c) => /Gradient/i.test(c.name));
+      // gradient sits directly beneath the navbar in the fixed block
+      root.insertChild(root.children.length - 1, g);
+    }
+    if (!root.numberOfFixedChildren || root.numberOfFixedChildren < want) {
+      root.numberOfFixedChildren = want;
     }
     return 'navbar pinned fixed (last child, ' + root.numberOfFixedChildren + ' fixed)';
   } catch (e) {
@@ -345,7 +366,7 @@ async function run() {
 
   // ---------- 0. real Button + Badge components (before styling, so
   //             removed placeholders are not styled needlessly) ----------
-  for (const kind of ['button', 'badge', 'accordion']) {
+  for (const kind of ['button', 'badge', 'accordion', 'navbar']) {
     const r = await swapComponents(sel, kind);
     if (r.swapped) parts.push(r.swapped + ' ' + kind + 's replaced');
     if (r.failed) parts.push(r.failed + ' ' + kind + ' swaps failed');
@@ -410,7 +431,12 @@ async function run() {
   // ---------- C. real navbar / footer ----------
   const navSlot = findTagged(sel, 'replaceWith', 'currentNavbar');
   if (navSlot) {
-    const src = await findByName('.current Navbar', ['INSTANCE', 'COMPONENT']);
+    // an explicit navbarSource node id wins over a name lookup, so a page can
+    // pull the navbar from a specific reference page (e.g. India Homepage)
+    const srcId = navSlot.getSharedPluginData(NS, 'navbarSource');
+    let src = null;
+    if (srcId) { try { src = await figma.getNodeByIdAsync(srcId); } catch (e) { src = null; } }
+    if (!src) src = await findByName('.current Navbar', ['INSTANCE', 'COMPONENT']);
     if (src) {
       const copy = src.type === 'COMPONENT' ? src.createInstance() : src.clone();
       const parent = navSlot.parent;
@@ -436,12 +462,15 @@ async function run() {
       footerHost.children.some((c) => c.name === '.current Footer');
     if (already) parts.push('footer already present — skipped');
     else {
-      const src = await findByName('.current Footer', ['COMPONENT_SET', 'COMPONENT', 'INSTANCE']);
+      const srcId = footerHost.getSharedPluginData(NS, 'footerSource');
+      let src = null;
+      if (srcId) { try { src = await figma.getNodeByIdAsync(srcId); } catch (e) { src = null; } }
+      if (!src) src = await findByName('.current Footer', ['COMPONENT_SET', 'COMPONENT', 'INSTANCE', 'FRAME']);
       if (src) {
         let inst;
         if (src.type === 'COMPONENT_SET') inst = src.defaultVariant.createInstance();
         else if (src.type === 'COMPONENT') inst = src.createInstance();
-        else inst = src.clone();
+        else inst = src.clone();   // INSTANCE or plain FRAME (India's footer is a frame)
         footerHost.appendChild(inst);
         inst.name = '.current Footer';
         try {
